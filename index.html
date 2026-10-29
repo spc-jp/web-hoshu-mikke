@@ -2,57 +2,2616 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#000066">
-<meta name="description" content="5つの質問でホームページの保守状況を整理。SPCの4つのWeb保守プランから、あなたに合うプランをご案内します。">
-<title>SPC｜Web保守プラン診断</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNS投稿マネージャー</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#000066;--dark:#081c4b;--blue:#0876d2;--text:#1b2b49;--muted:#5c6c86;--line:#dde5f2;--bg:#f5f8fd;--white:#fff;--shadow:0 18px 48px rgba(12,40,96,.09);--pink:#df326b;--green:#159b49;--purple:#7132ca}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:var(--bg);font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;line-height:1.7}button,a{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #f5b926;outline-offset:3px}
-.wrap{max-width:1120px;margin:auto;padding:0 24px}.header{background:#fff;border-bottom:1px solid var(--line)}.header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand-badge{display:grid;place-items:center;background:var(--navy);color:#fff;border-radius:12px;width:52px;height:47px;font-weight:900;font-size:20px;letter-spacing:-1px}.brand-copy{display:flex;flex-direction:column;line-height:1.35}.brand-copy strong{color:var(--navy);font-size:16px}.brand-copy span{font-size:12px;color:var(--muted)}.header-note{color:#566682;font-size:13px;font-weight:700}
-.hero{background:radial-gradient(circle at 92% 4%,rgba(142,206,255,.42) 0,transparent 31%),linear-gradient(120deg,#eef6ff,#fff 70%);border-bottom:1px solid #e2ebf7}.hero-content{padding-top:54px;padding-bottom:45px;display:grid;grid-template-columns:1.55fr 0.8fr;align-items:center;gap:28px}.kicker{font-size:13px;color:#0b64aa;letter-spacing:.08em;font-weight:800}.hero h1{font-size:clamp(29px,4vw,45px);letter-spacing:-.045em;line-height:1.4;margin:12px 0 13px;color:#072d65}.hero h1 em{font-style:normal;color:#0874c9}.intro{color:#4e6280;font-size:16px;margin:0;max-width:650px}.hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.hero-tags span{font-size:12px;background:#fff;border:1px solid #dbe9fa;border-radius:30px;padding:6px 12px;color:#2b5788;font-weight:800}.hero-visual{padding:24px 20px;border:1px solid #d6e4f7;border-radius:23px;box-shadow:0 14px 30px #093e7510;background:#ffffffc9;display:flex;flex-direction:column;gap:10px}.hero-visual h2{font-size:14px;margin:0 0 4px;color:#1b4d86}.visual-row{display:flex;align-items:center;gap:10px;background:#f2f7ff;padding:10px 12px;border-radius:10px;font-size:13px;font-weight:700}.visual-row .vicon{font-size:22px;width:28px;text-align:center}.visual-row small{display:block;color:#71829a;font-size:11px;font-weight:500}.visual-sign{font-size:12px;text-align:center;font-weight:900;color:#bd4d4d}.visual-bottom{font-size:12px;color:#6d7b93;margin:0}
-.main{padding:38px 0 54px}.grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(270px,.85fr);gap:22px;align-items:start}.card{background:#fff;border:1px solid #e2eaf5;border-radius:22px;box-shadow:var(--shadow)}.quiz{overflow:hidden}.quiz-head{padding:25px 32px 20px;border-bottom:1px solid #e7edf6;display:flex;justify-content:space-between;gap:15px;align-items:center}.quiz-head h2{color:#092e64;font-size:21px;letter-spacing:-.035em;margin:0}.step-tag{font-size:13px;background:#eaf3ff;border-radius:99px;color:#045ea6;font-weight:800;padding:5px 12px;white-space:nowrap}.progress{height:7px;background:#e9f0f9}.progress-fill{background:linear-gradient(90deg,#0775d1,#1aacdc);height:100%;width:20%;transition:width .3s ease}.quiz-body{padding:34px 32px 24px;min-height:358px}.q-label{font-size:12px;font-weight:800;letter-spacing:.12em;color:#2e76b9}.q-title{color:#0b2c5b;line-height:1.5;margin:8px 0 10px;font-size:clamp(19px,2.5vw,25px);letter-spacing:-.03em}.q-help{font-size:14px;color:#67758e;margin:0 0 22px}.options{display:grid;gap:10px}.option{border:1.5px solid #dfe7f1;border-radius:13px;display:flex;align-items:center;gap:12px;background:#fff;padding:15px 17px;text-align:left;width:100%;transition:.15s;color:var(--text);line-height:1.5}.option:hover{background:#f6fbff;border-color:#83b9ed}.option[aria-pressed="true"]{border-color:#0077d1;background:#eef7ff;box-shadow:0 0 0 2px #0077d118}.circle{display:grid;place-items:center;border:2px solid #afbdd1;border-radius:50%;height:23px;width:23px;flex:0 0 23px;color:transparent;font-size:14px}.option[aria-pressed="true"] .circle{background:#0875ca;border-color:#0875ca;color:#fff}.option strong{display:block;font-size:15px;font-weight:700}.option small{display:block;color:#75869a;font-size:12px;margin-top:3px}.quiz-actions{padding:20px 32px 29px;display:flex;justify-content:space-between;align-items:center;gap:12px}.btn{border-radius:11px;padding:12px 24px;border:1px solid #d5e0ee;background:#fff;color:#163b6b;font-weight:800;font-size:14px;display:inline-flex;gap:9px;align-items:center;justify-content:center;min-height:47px;transition:.15s}.btn:hover:not(:disabled){filter:brightness(.965);transform:translateY(-1px)}.btn:disabled{opacity:.4;cursor:not-allowed}.btn-primary{background:var(--navy);color:#fff;border-color:var(--navy)}.btn-light{background:#edf4ff;border-color:#d7e8ff;color:var(--navy)}.small-note{font-size:12px;color:#74839b;text-align:center;margin:10px 0 0}
-.side{padding:25px}.side h3{font-size:18px;color:#0c3064;margin:0 0 11px}.side p{font-size:13px;color:#64758b;margin:0 0 19px}.point{display:flex;align-items:flex-start;gap:11px;margin:17px 0}.point-icon{width:35px;height:35px;flex:0 0 35px;display:grid;place-items:center;color:#0866ac;background:#ecf5ff;border-radius:11px;font-size:17px}.point strong{font-size:14px;display:block}.point span{font-size:12px;color:#6c7c94}.callout{background:#f2f7ff;color:#31577f;border-left:3px solid #2c85cf;padding:14px;border-radius:5px 10px 10px 5px;font-size:12px;margin-top:18px}.callout strong{color:#073668}
-.result{display:none;padding:29px 32px 31px}.result.show{display:block}.result-header{display:flex;align-items:center;gap:12px;margin-bottom:18px}.result-check{border-radius:50%;background:#dff6e9;color:#158948;font-size:20px;width:42px;height:42px;display:grid;place-items:center;font-weight:900}.result-header h2{margin:0;color:#0d356c;font-size:24px}.result-header p{margin:0;color:#72829a;font-size:13px}.result-card{border-radius:17px;border:2px solid #e4e9f3;background:#f8fbff;padding:24px}.result-card.pink{border-color:#f7bdcd;background:#fff7fa}.result-card.green{border-color:#b6e7c4;background:#f7fff8}.result-card.blue{border-color:#a8d3fd;background:#f4faff}.result-card.purple{border-color:#d4baf8;background:#fbf7ff}.result-kicker{font-size:13px;color:#62748c;font-weight:700}.result-planline{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:4px 0 7px}.result-planline strong{font-size:27px;color:#102c5d}.price{font-size:25px;font-weight:900;color:#0d4ca8;white-space:nowrap}.price small{font-size:12px;color:#597393;margin-right:4px}.result-sub{font-size:14px;margin:2px 0 15px;color:#425675}.included{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:3px}.included span{display:inline-flex;border:1px solid #d3e0ef;border-radius:20px;padding:4px 10px;font-size:12px;background:#fff;color:#214b7c;font-weight:700}.why{margin-top:18px;padding:16px 17px;border-radius:13px;background:#f0f5fc;color:#34506e}.why strong{color:#193e72;font-size:14px}.why p{margin:4px 0 0;font-size:13px;line-height:1.85}.status-box{margin-top:14px;border:1px solid #e0e7f2;border-radius:13px;padding:15px 17px}.status-box h3{margin:0 0 5px;font-size:14px;color:#143c6f}.status-box p{font-size:13px;color:#596b80;margin:0;white-space:pre-line}.result-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:19px}.result-actions .btn{flex:1 1 170px}.notice{font-size:12px;color:#647690;margin:14px 0 0}
-.plans-section{margin-top:38px}.section-heading{font-size:24px;letter-spacing:-.04em;color:#0d326b;margin:0 0 6px}.section-lead{font-size:14px;color:#667c96;margin:0 0 19px}.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.plan{border-radius:17px;background:#fff;border:1px solid #e1e8f2;padding:20px 17px 22px;position:relative;transition:.2s}.plan.active{outline:3px solid #0b78d2;outline-offset:1px;box-shadow:0 12px 23px #1465b31a}.plan-flower{font-size:28px;line-height:1.2}.plan h3{font-size:21px;margin:5px 0 3px;color:#0c2a59}.plan.pink h3{color:var(--pink)}.plan.green h3{color:#10843a}.plan.blue h3{color:#0260b8}.plan.purple h3{color:#7036b1}.plan .plan-cap{font-size:12px;min-height:41px;color:#6a7b91;line-height:1.7;margin:0 0 13px}.plan-price{font-size:26px;font-weight:900;color:#142f62;padding-bottom:12px;border-bottom:1px solid #e5edf6;line-height:1.4}.plan-price small{font-size:12px;color:#6a7c97}.plan ul{list-style:none;padding:0;margin:12px 0 0}.plan li{font-size:12px;padding-left:20px;position:relative;line-height:1.85}.plan li:before{content:"✓";position:absolute;left:0;color:#0873c5;font-weight:900}.plan-mini{font-size:11px;color:#7a8699;margin-top:10px}.plan-ribbon{display:none;font-size:11px;position:absolute;top:-11px;right:10px;border-radius:30px;background:#0b66ae;color:#fff;padding:2px 11px;font-weight:800}.plan.active .plan-ribbon{display:block}
-.footer-note{border-top:1px solid #e0e7f0;margin-top:22px;padding-top:17px;color:#768499;font-size:12px}.foot{background:#e9f1fd;border-top:1px solid #d7e5f5}.foot-inner{padding:25px 24px;display:flex;justify-content:space-between;align-items:center;gap:15px}.foot strong{color:#112e65;font-size:15px}.foot span{font-size:12px;color:#59738f}.hidden{display:none!important}#live-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-@media(max-width:890px){.hero-content{grid-template-columns:1fr}.hero-visual{display:none}.grid{grid-template-columns:1fr}.side{display:grid;grid-template-columns:repeat(2,1fr);gap:0 18px}.side h3,.side>p,.callout{grid-column:1/-1}.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:540px){.wrap{padding:0 15px}.header-inner{min-height:69px}.brand-badge{height:41px;width:44px;font-size:17px}.brand-copy strong{font-size:13px}.brand-copy span{font-size:10px}.header-note{display:none}.hero-content{padding-top:32px;padding-bottom:34px}.hero h1{font-size:28px}.intro{font-size:14px}.main{padding:22px 0 35px}.quiz-head{padding:20px 18px 15px}.quiz-head h2{font-size:18px}.quiz-body{padding:24px 19px 19px;min-height:395px}.quiz-actions{padding:13px 19px 23px}.btn{padding:11px 16px;font-size:13px}.q-title{font-size:21px}.option{padding:13px 12px}.side{padding:21px;display:block}.result{padding:24px 18px}.result-card{padding:17px}.result-planline strong{font-size:23px}.price{font-size:22px}.plans{gap:10px}.plan{padding:15px 12px}.plan h3{font-size:18px}.plan-price{font-size:23px}.plan li{font-size:11px}.plan .plan-cap{min-height:50px}.section-heading{font-size:21px}.foot-inner{flex-direction:column;align-items:flex-start}}
-@media print{body{background:#fff}.header,.hero,.side,.quiz,.result-actions,.plans-section,.foot{display:none!important}.main{padding:0}.grid{display:block}.card{border:none;box-shadow:none}.result{display:block!important}.result-card{break-inside:avoid}#result{padding:0}}
+:root {
+  --bg: #e8eef6;
+  --panel: #ffffff;
+  --card: #ffffff;
+  --border: #d0dae8;
+  --border-light: #e4ecf5;
+  --cyan: #00b8a9;
+  --blue: #0090e0;
+  --white: #1a2b3c;
+  --muted: #7a8fa8;
+  --draft: #f59e0b;
+  --scheduled: #00b8a9;
+  --posted: #9aafc4;
+  --danger: #ef4444;
+  --shadow: 0 2px 8px rgba(0,80,160,0.08);
+  --shadow-hover: 0 4px 16px rgba(0,80,160,0.13);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--white); min-height: 100vh; }
+
+header {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; top: 0; z-index: 200;
+  box-shadow: 0 2px 8px rgba(0,80,160,0.07);
+}
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; color: var(--white); }
+.logo span { color: var(--cyan); }
+.logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--cyan), var(--blue)); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+.header-date { font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; }
+
+.tab-bar { display: flex; background: var(--panel); border-bottom: 1px solid var(--border); padding: 0 24px; overflow-x: auto; }
+.tab { padding: 14px 20px; font-size: 13px; font-weight: 700; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; }
+.tab.active { color: var(--cyan); border-bottom-color: var(--cyan); }
+.tab:hover:not(.active) { color: var(--white); }
+
+.view { display: none; padding: 20px 28px; width: 100%; }
+.view.active { display: block; }
+
+/* TODAY */
+.today-hero {
+  background: linear-gradient(135deg, rgba(0,184,169,0.1), rgba(0,144,224,0.07));
+  border: 1px solid rgba(0,184,169,0.25);
+  border-radius: 14px;
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+}
+.today-title { font-size: 18px; font-weight: 700; color: var(--cyan); }
+.today-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.today-count { font-family: 'DM Mono', monospace; font-size: 36px; font-weight: 700; color: var(--cyan); text-align: right; }
+.today-count span { font-size: 13px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-weight: 400; }
+
+.today-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 14px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  animation: fadeIn 0.25s ease;
+  box-shadow: var(--shadow);
+}
+.today-card:hover { box-shadow: var(--shadow-hover); border-color: var(--cyan); }
+.today-card.is-done { border-style: dashed; box-shadow: none; }
+
+.card-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.pbadge { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; }
+.pbadge-X { background: rgba(29,161,242,0.12); color: #1a8fd1; border: 1px solid rgba(29,161,242,0.25); }
+.pbadge-Threads { background: rgba(80,80,80,0.08); color: #555; border: 1px solid rgba(80,80,80,0.18); }
+.pbadge-Facebook { background: rgba(24,119,242,0.12); color: #1565c0; border: 1px solid rgba(24,119,242,0.25); }
+.pbadge-note { background: rgba(61,192,108,0.12); color: #2a9d5c; border: 1px solid rgba(61,192,108,0.25); }
+.pbadge-BASE { background: rgba(232,56,13,0.1); color: #c0320a; border: 1px solid rgba(232,56,13,0.22); }
+.pbadge-Instagram { background: rgba(236,72,153,0.12); color: #be185d; border: 1px solid rgba(236,72,153,0.25); }
+.pbadge-YouTube   { background: rgba(239,68,68,0.12); color: #b91c1c; border: 1px solid rgba(239,68,68,0.25); }
+.post-time { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); }
+.done-pill { margin-left: auto; font-size: 11px; padding: 2px 10px; border-radius: 10px; background: rgba(154,175,196,0.18); color: var(--posted); border: 1px solid rgba(154,175,196,0.3); }
+
+.text-box {
+  font-size: 14px;
+  line-height: 1.78;
+  color: var(--white);
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f4f7fb;
+  border: 1px solid var(--border-light);
+  border-radius: 9px;
+  padding: 13px 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  user-select: text;
+}
+.text-box:hover { border-color: var(--cyan); background: rgba(0,184,169,0.04); }
+.text-box.flash { border-color: var(--cyan); background: rgba(0,184,169,0.08); }
+
+.memo-line { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
+.card-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+.abtn {
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 5px;
+}
+.abtn:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,184,169,0.05); }
+.abtn.primary { background: linear-gradient(135deg, var(--cyan), var(--blue)); border: none; color: #fff; font-size: 13px; padding: 8px 20px; }
+.abtn.primary:hover { opacity: 0.88; transform: translateY(-1px); }
+.abtn.copied { background: rgba(0,184,169,0.1); border-color: var(--cyan); color: var(--cyan); }
+.abtn.danger:hover { border-color: var(--danger); color: var(--danger); background: rgba(239,68,68,0.05); }
+
+.empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
+.empty-state .ico { font-size: 48px; margin-bottom: 14px; }
+.empty-state p { font-size: 14px; line-height: 1.9; }
+.empty-link { color: var(--cyan); cursor: pointer; text-decoration: underline; }
+
+
+/* PC カレンダー：全幅縦並び */
+/* 週次スケジュール */
+.weekly-schedule { background:#fff; border:1px solid var(--border); border-radius:12px; margin-bottom:16px; box-shadow:var(--shadow); overflow:hidden; }
+.ws-header { display:flex; align-items:center; justify-content:space-between; padding:12px 18px; font-size:13px; font-weight:700; color:var(--white); cursor:pointer; background:linear-gradient(135deg,rgba(0,184,169,0.08),rgba(0,144,224,0.05)); border-bottom:1px solid var(--border); transition:background 0.2s; user-select:none; }
+.ws-header:hover { background:linear-gradient(135deg,rgba(0,184,169,0.14),rgba(0,144,224,0.09)); }
+.ws-toggle { font-size:11px; color:var(--muted); font-weight:400; }
+.ws-body { padding:14px 18px; }
+.ws-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
+.ws-item { background:#f4f7fb; border:1px solid var(--border); border-radius:9px; padding:10px 12px; }
+.ws-item.ws-highlight { background:rgba(0,184,169,0.08); border-color:rgba(0,184,169,0.3); }
+.ws-day { font-size:12px; font-weight:800; color:var(--muted); margin-bottom:5px; }
+.ws-item.ws-highlight .ws-day { color:var(--cyan); }
+.ws-task { font-size:12px; color:var(--white); line-height:1.65; }
+@media(max-width:900px){ .ws-grid { grid-template-columns:1fr 1fr; } }
+
+/* 集客スケジュール（黄色系） */
+.ws-divider {
+  border: none; border-top: 1px dashed var(--border);
+  margin: 14px 0 12px;
+}
+.ws-section-title {
+  font-size: 12px; font-weight: 800; color: #b45309;
+  margin-bottom: 10px; letter-spacing: 0.05em;
+}
+.ws-collect-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+.ws-collect-item {
+  background: #fef9c3;
+  border: 1px solid #fde68a;
+  border-radius: 9px; padding: 10px 14px;
+}
+.ws-collect-platform {
+  font-size: 13px; font-weight: 800; color: #92400e;
+  margin-bottom: 5px;
+}
+.ws-collect-times {
+  font-size: 12px; color: #78350f; line-height: 1.8;
+}
+.ws-collect-times span {
+  display: inline-block;
+  background: rgba(245,158,11,0.2);
+  border-radius: 4px; padding: 1px 7px; margin: 1px 3px 1px 0;
+  font-weight: 700;
+}
+
+/* CAL NAV 改善 */
+.cal-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 20px;
+  box-shadow: var(--shadow);
+  width: fit-content;
+}
+.cal-nav h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  min-width: 160px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.nav-btn {
+  width: 46px;
+  height: 46px;
+  background: #f4f7fb;
+  border: 1.5px solid var(--border);
+  border-radius: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.18s;
+  font-weight: 700;
+  line-height: 1;
+}
+.nav-btn:hover {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0,184,169,0.35);
+  transform: scale(1.1);
+}
+.nav-today-btn {
+  padding: 9px 18px;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,184,169,0.25);
+}
+.nav-today-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.cal-grid-hd, .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; width: 100%; }
+.cal-grid-hd { margin-bottom: 8px; }
+.cal-hd { text-align: center; font-size: 15px; font-weight: 700; padding: 10px 0; letter-spacing: 0.04em; }
+.cal-hd.hd-mon,.cal-hd.hd-tue,.cal-hd.hd-wed,.cal-hd.hd-thu,.cal-hd.hd-fri { color: var(--muted); }
+.cal-hd.hd-sat { color: #60a5fa; }
+.cal-hd.hd-sun { color: #f87171; }
+
+.cal-cell {
+  min-height: 160px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 12px 8px;
+  cursor: pointer;
+  transition: box-shadow 0.18s, border-color 0.18s;
+  box-shadow: var(--shadow);
+}
+.cal-cell:hover { border-color: var(--cyan); box-shadow: var(--shadow-hover); }
+.cal-cell.is-today { border-color: #00b8a9; border-width: 4px; background: rgba(0,184,169,0.07); box-shadow: 0 0 0 2px rgba(0,184,169,0.2); }
+.cal-cell.is-selected { border-color: var(--blue); border-width: 2px; background: rgba(0,144,224,0.07); }
+.cal-cell.other-m { opacity: 0.35; pointer-events: none; box-shadow: none; }
+
+.cal-cell.is-sat { background: rgba(96,165,250,0.06); border-color: rgba(96,165,250,0.3); }
+.cal-cell.is-sat:hover { border-color: #60a5fa; }
+.cal-cell.is-sat .cal-day { color: #2563eb; }
+
+.cal-cell.is-sun { background: rgba(248,113,113,0.06); border-color: rgba(248,113,113,0.28); }
+.cal-cell.is-sun:hover { border-color: #ef4444; }
+.cal-cell.is-sun .cal-day { color: #dc2626; }
+
+.cal-cell.is-hol { background: rgba(248,113,113,0.06); border-color: rgba(248,113,113,0.28); }
+.cal-cell.is-hol .cal-day { color: #dc2626; }
+
+.cal-cell.is-today .cal-day { color: var(--cyan) !important; font-weight: 700; }
+
+.cal-day { font-size: 20px; font-family: 'DM Mono', monospace; color: #4a6078; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; line-height: 1.2; }
+.hol-name { font-size: 11px; color: #dc2626; font-family: 'Noto Sans JP', sans-serif; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.cal-dot {
+  font-size: 10px;
+  padding: 2px 6px 2px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 3px;
+  line-height: 1.6;
+  font-weight: 600;
+  position: relative;
+  border-left: 3px solid transparent;
+}
+/* note → メイン：全周枠・濃いグリーン・シャドウで最も目立たせる */
+.cal-dot.plt-note {
+  background: #bbf7d0;
+  color: #15803d;
+  border-left: 3px solid #16a34a;
+  border-top: 1.5px solid #22c55e;
+  border-right: 1.5px solid #22c55e;
+  border-bottom: 1.5px solid #22c55e;
+  font-weight: 800;
+  font-size: 11px;
+  box-shadow: 0 1px 5px rgba(34,197,94,0.35);
+  letter-spacing: 0.02em;
+}
+/* X → 空色 */
+.cal-dot.plt-X       { background: #e0f2fe; color: #0369a1; border-left-color: #0ea5e9; }
+/* Threads → 紫 */
+.cal-dot.plt-Threads { background: #f3e8ff; color: #7e22ce; border-left-color: #a855f7; }
+/* Facebook → 青 */
+.cal-dot.plt-Facebook{ background: #dbeafe; color: #1d4ed8; border-left-color: #3b82f6; }
+/* BASE → オレンジ */
+.cal-dot.plt-BASE    { background: #ffedd5; color: #c2410c; border-left-color: #f97316; }
+/* アフィリエイト投稿 */
+.spill-affiliate { background: rgba(234,179,8,0.12); color: #b45309; border: 1px solid rgba(234,179,8,0.3); font-weight: 800; }
+
+/* Amazon・楽天バッジ */
+.pbadge-Amazon  { background: rgba(255,153,0,0.12); color: #c05000; border: 1px solid rgba(255,153,0,0.3); }
+.pbadge-Rakuten { background: rgba(191,0,0,0.1); color: #bf0000; border: 1px solid rgba(191,0,0,0.25); }
+
+/* Amazon・楽天ピッカーボタン */
+.pbtn.on-Amazon  { border-color: #c05000; color: #c05000; background: rgba(255,153,0,0.08); }
+.pbtn.on-Rakuten { border-color: #bf0000; color: #bf0000; background: rgba(191,0,0,0.07); }
+
+/* Instagram → ピンク */
+.cal-dot.plt-Instagram { background: #fce7f3; color: #be185d; border-left: 3px solid #ec4899; }
+/* YouTube → 赤 */
+.cal-dot.plt-YouTube   { background: #fee2e2; color: #b91c1c; border-left: 3px solid #ef4444; }
+/* Amazon・楽天カレンダードット */
+.cal-dot.plt-Amazon  { background: rgba(255,153,0,0.18); color: #c05000; border-left: 3px solid #ff9900; }
+.cal-dot.plt-Rakuten { background: rgba(191,0,0,0.12); color: #bf0000; border-left: 3px solid #bf0000; }
+/* 投稿済みは薄く */
+.cal-dot.is-posted   { }
+/* 集客投稿は黄色・太枠で目立たせる */
+.cal-dot.is-promo {
+  background: #fef9c3;
+  color: #854d0e;
+  border-left: 3px solid #eab308;
+  border-top: 1.5px solid #eab308;
+  border-right: 1.5px solid #eab308;
+  border-bottom: 1.5px solid #eab308;
+  font-weight: 800;
+  box-shadow: 0 1px 4px rgba(234,179,8,0.3);
+}
+
+.day-detail {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+.dd-placeholder { color: var(--muted); font-size: 13px; text-align: center; padding: 20px; line-height: 2; }
+.dd-cards-wrap { display: flex; flex-wrap: wrap; gap: 14px; }
+.dd-title { font-size: 15px; font-weight: 700; color: var(--cyan); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
+.dd-add-link { font-size: 12px; color: var(--cyan); cursor: pointer; text-decoration: underline; font-weight: 400; }
+.dd-add-btn {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,184,169,0.3);
+}
+.dd-add-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.dd-empty { color: var(--muted); font-size: 13px; text-align: center; padding: 18px 0; }
+.dd-card { display: flex; align-items: flex-start; gap: 12px; padding: 14px; background: #fff; border: 1px solid var(--border); border-radius: 9px; transition: box-shadow 0.2s, border-color 0.2s; flex: 1 1 360px; }
+.dd-card:hover { border-color: var(--cyan); box-shadow: var(--shadow); }
+.dd-left { min-width: 60px; display: flex; flex-direction: column; gap: 4px; }
+.dd-text {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--white);
+  white-space: normal;
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  min-width: 0;
+}
+.dd-actions { display: flex; flex-direction: column; gap: 5px; }
+.smbtn { padding: 5px 10px; border-radius: 6px; border: 1px solid var(--border); background: #fff; color: var(--muted); font-size: 11px; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+.smbtn:hover { border-color: var(--cyan); color: var(--cyan); }
+.smbtn.danger:hover { border-color: var(--danger); color: var(--danger); }
+
+/* 今日の投稿 */
+.today-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); gap: 16px; }
+.today-grid .today-card { margin-bottom: 0; }
+/* ネタ作成 */
+#view-create > * { max-width: 660px; }
+/* ネタ一覧 */
+.stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); gap: 14px; }
+.stock-grid .stock-card { margin-bottom: 0; }
+
+/* フォーム */
+.form-sec { margin-bottom: 16px; }
+.flabel { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-bottom: 7px; }
+input[type=text], input[type=datetime-local], textarea, select { width: 100%; background: #fff; border: 1px solid var(--border); border-radius: 9px; color: var(--white); font-family: 'Noto Sans JP', sans-serif; font-size: 13px; padding: 10px 13px; outline: none; transition: border-color 0.2s, box-shadow 0.2s; box-shadow: inset 0 1px 3px rgba(0,0,0,0.04); }
+input:focus, textarea:focus, select:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(0,184,169,0.12); }
+input[type=datetime-local] { color-scheme: light; }
+textarea { resize: vertical; min-height: 120px; line-height: 1.7; }
+select option { background: #fff; color: var(--white); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ppicker { display: flex; gap: 8px; flex-wrap: wrap; }
+.pbtn { flex: 1; min-width: 90px; padding: 9px 6px; border-radius: 9px; border: 2px solid var(--border); background: #f7fafd; color: var(--muted); font-size: 12px; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; cursor: pointer; text-align: center; transition: all 0.18s; }
+.pbtn.on-X { border-color: #1a8fd1; color: #1a8fd1; background: rgba(29,161,242,0.08); }
+.pbtn.on-Threads { border-color: #666; color: #444; background: rgba(80,80,80,0.07); }
+.pbtn.on-Facebook { border-color: #1565c0; color: #1565c0; background: rgba(24,119,242,0.08); }
+.pbtn.on-note { border-color: #2a9d5c; color: #2a9d5c; background: rgba(61,192,108,0.08); }
+.pbtn.on-BASE { border-color: #c0320a; color: #c0320a; background: rgba(232,56,13,0.08); }
+.pbtn.on-Instagram { border-color: #be185d; color: #be185d; background: rgba(236,72,153,0.08); }
+.pbtn.on-YouTube   { border-color: #b91c1c; color: #b91c1c; background: rgba(239,68,68,0.08); }
+.char-cc { text-align: right; font-size: 11px; font-family: 'DM Mono', monospace; color: var(--muted); margin-top: 4px; }
+.char-cc.warn { color: var(--draft); }
+.char-cc.over { color: var(--danger); }
+.source-box { background: rgba(0,184,169,0.05); border: 1px solid rgba(0,184,169,0.25); border-radius: 10px; padding: 14px 16px; margin-bottom: 16px; display: none; }
+.source-box.show { display: block; }
+.source-box-title { font-size: 12px; font-weight: 700; color: var(--cyan); margin-bottom: 10px; letter-spacing: 0.05em; }
+.card-source { font-size: 11px; color: var(--muted); margin-bottom: 10px; padding: 6px 10px; background: rgba(0,184,169,0.06); border-radius: 6px; border-left: 3px solid #2a9d5c; }
+.card-source.base-src { border-left-color: #c0320a; }
+.card-source a { color: var(--cyan); word-break: break-all; }
+.btn-save { width: 100%; padding: 13px; background: linear-gradient(135deg, var(--cyan), var(--blue)); border: none; border-radius: 10px; color: #fff; font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; transition: opacity 0.2s, transform 0.15s; margin-top: 4px; box-shadow: 0 3px 10px rgba(0,184,169,0.3); }
+.btn-save:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-clear { width: 100%; padding: 10px; background: #fff; border: 1px solid var(--border); border-radius: 10px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 13px; cursor: pointer; transition: all 0.2s; margin-top: 8px; }
+.btn-clear:hover { border-color: var(--cyan); color: var(--cyan); }
+.edit-notice { font-size: 12px; color: #b45309; padding: 9px 14px; background: rgba(245,158,11,0.08); border-radius: 8px; margin-bottom: 14px; border: 1px solid rgba(245,158,11,0.3); display: none; }
+.sfilter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
+.sfbtn { padding: 6px 14px; border-radius: 16px; border: 1px solid var(--border); background: #fff; color: var(--muted); font-size: 12px; font-family: 'Noto Sans JP', sans-serif; cursor: pointer; transition: all 0.18s; box-shadow: var(--shadow); }
+.sfbtn.on { background: var(--cyan); border-color: var(--cyan); color: #fff; font-weight: 700; }
+.sfbtn:hover:not(.on) { border-color: var(--cyan); color: var(--cyan); }
+.sf-srch { margin-left: auto; background: #fff; border: 1px solid var(--border); border-radius: 16px; color: var(--white); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; padding: 6px 14px; width: 180px; outline: none; box-shadow: var(--shadow); }
+.sf-srch:focus { border-color: var(--cyan); }
+.stock-card { background: var(--card); border: 1px solid var(--border); border-radius: 11px; padding: 16px 18px; animation: fadeIn 0.25s ease; transition: box-shadow 0.18s, border-color 0.18s; box-shadow: var(--shadow); }
+.stock-card:hover { box-shadow: var(--shadow-hover); border-color: var(--cyan); }
+.sc-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 9px; }
+.spill { padding: 3px 10px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+.spill-draft { background: rgba(245,158,11,0.12); color: #b45309; border: 1px solid rgba(245,158,11,0.3); }
+.spill-scheduled { background: rgba(0,184,169,0.12); color: var(--cyan); border: 1px solid rgba(0,184,169,0.3); }
+.spill-promo { background: #fef9c3; color: #854d0e; border: 1px solid #eab308; font-weight: 800; }
+.spill-posted { background: rgba(154,175,196,0.15); color: var(--posted); border: 1px solid rgba(154,175,196,0.3); }
+.sc-date { font-size: 11px; color: var(--muted); font-family: 'DM Mono', monospace; }
+.sc-text { font-size: 13px; line-height: 1.7; color: var(--white); white-space: pre-wrap; word-break: break-word; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.sc-memo { font-size: 11px; color: var(--muted); margin-bottom: 10px; }
+.sc-actions { display: flex; gap: 7px; align-items: center; flex-wrap: wrap; }
+.scbtn { padding: 5px 12px; border-radius: 7px; border: 1px solid var(--border); background: #fff; color: var(--muted); font-size: 11px; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; cursor: pointer; transition: all 0.18s; }
+.scbtn:hover { border-color: var(--cyan); color: var(--cyan); }
+.scbtn.danger:hover { border-color: var(--danger); color: var(--danger); }
+.scbtn.copied { background: rgba(0,184,169,0.1); border-color: var(--cyan); color: var(--cyan); }
+.sc-chars { margin-left: auto; font-size: 11px; color: var(--muted); font-family: 'DM Mono', monospace; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── タスク管理 ── */
+.task-top-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.task-cat-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.task-top-right { display: flex; gap: 8px; }
+
+.task-cat-btn {
+  padding: 6px 14px; border-radius: 16px; border: 1px solid var(--border);
+  background: #fff; color: var(--muted); font-size: 12px;
+  font-family: 'Noto Sans JP', sans-serif; cursor: pointer;
+  transition: all 0.18s; box-shadow: var(--shadow);
+}
+.task-cat-btn.on { background: var(--cyan); border-color: var(--cyan); color: #fff; font-weight: 700; }
+.task-cat-btn:hover:not(.on) { border-color: var(--cyan); color: var(--cyan); }
+
+.task-add-cat-btn {
+  padding: 7px 14px; border-radius: 9px; border: 1px dashed var(--border);
+  background: #fff; color: var(--muted); font-size: 12px;
+  font-family: 'Noto Sans JP', sans-serif; font-weight: 700; cursor: pointer; transition: all 0.18s;
+}
+.task-add-cat-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+
+.task-add-btn {
+  padding: 7px 18px; border-radius: 9px; border: none;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  color: #fff; font-size: 13px; font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700; cursor: pointer; transition: all 0.18s;
+  box-shadow: 0 2px 8px rgba(0,184,169,0.3);
+}
+.task-add-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+
+/* カンバン */
+.kanban-wrap { display: grid; grid-template-columns: repeat(8, minmax(160px, 1fr)); gap: 8px; align-items: start; }
+.kanban-col { background: #f4f7fb; border-radius: 14px; padding: 14px; border: 1px solid var(--border); }
+.kanban-col-header {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 14px; font-weight: 700; color: var(--white);
+  margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.kanban-col-icon { font-size: 16px; }
+.kanban-count {
+  margin-left: auto; font-size: 12px; font-family: 'DM Mono', monospace;
+  background: #fff; border: 1px solid var(--border); border-radius: 10px;
+  padding: 1px 8px; color: var(--muted);
+}
+
+.kanban-priority { border-top: 3px solid #f59e0b; }
+.kanban-urgent  { border-top: 3px solid #ef4444; }
+.kanban-todo { border-top: 3px solid #9aafc4; }
+.kanban-doing { border-top: 3px solid var(--cyan); }
+.kanban-review { border-top: 3px solid #a855f7; }
+.kanban-done { border-top: 3px solid #22c55e; }
+
+.kanban-cards { display: flex; flex-direction: column; gap: 8px; min-height: 60px; }
+
+/* タスクカード */
+.task-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px 14px; cursor: grab; transition: box-shadow 0.18s, border-color 0.18s;
+  box-shadow: var(--shadow); animation: fadeIn 0.2s ease;
+  user-select: none; -webkit-user-select: none;
+  touch-action: none;
+}
+.task-card:hover { box-shadow: var(--shadow-hover); border-color: var(--cyan); }
+.task-card-title { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 5px; line-height: 1.5; }
+.task-card-cat {
+  display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 8px;
+  background: rgba(0,184,169,0.1); color: var(--cyan); border: 1px solid rgba(0,184,169,0.2);
+  margin-bottom: 6px;
+}
+.task-card-memo {
+  font-size: 11px; color: var(--muted); line-height: 1.6;
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
+  overflow: hidden; white-space: normal;
+}
+
+.kanban-add-btn {
+  width: 100%; margin-top: 10px; padding: 8px;
+  border: 1.5px dashed var(--border); border-radius: 9px;
+  background: transparent; color: var(--muted); font-size: 12px;
+  font-family: 'Noto Sans JP', sans-serif; font-weight: 700;
+  cursor: pointer; transition: all 0.18s;
+}
+.kanban-add-btn:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,184,169,0.04); }
+
+/* 列集計バー */
+.kanban-summary {
+  background: rgba(0,184,169,0.06);
+  border: 1px solid rgba(0,184,169,0.2);
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+.ks-item { color: var(--muted); }
+.ks-item b { color: var(--white); font-weight: 700; }
+.ks-profit b { color: var(--cyan); font-weight: 800; }
+.ks-profit b.minus { color: #ef4444; }
+
+/* タスクカード移動ボタン */
+.task-card { cursor: pointer; }
+.task-card-move { display: flex; gap: 4px; margin-top: 8px; }
+.tc-mv-btn {
+  padding: 3px 10px; border-radius: 6px;
+  border: 1px solid var(--border); background: #f4f7fb;
+  color: var(--muted); font-size: 12px; font-weight: 700;
+  font-family: 'Noto Sans JP', sans-serif;
+  cursor: pointer; transition: all 0.15s;
+}
+.tc-mv-btn:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,184,169,0.06); }
+.tc-mv-btn:disabled { opacity: 0.3; cursor: default; }
+
+/* モーダル */
+.task-modal-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,60,120,0.18); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+}
+.task-modal {
+  background: #fff; border-radius: 16px; padding: 28px; width: 440px;
+  max-width: 95vw; box-shadow: 0 8px 40px rgba(0,60,120,0.18);
+  animation: fadeIn 0.22s ease;
+}
+.task-modal-title { font-size: 16px; font-weight: 800; color: var(--white); margin-bottom: 20px; }
+.task-modal-sec { margin-bottom: 14px; }
+.task-modal-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-bottom: 6px; }
+.task-modal-actions { display: flex; gap: 8px; margin-top: 18px; }
+.task-modal-save { flex: 1; padding: 11px; background: linear-gradient(135deg, var(--cyan), var(--blue)); border: none; border-radius: 10px; color: #fff; font-family: 'Noto Sans JP', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+.task-modal-save:hover { opacity: 0.88; }
+.task-modal-cancel { padding: 11px 16px; background: #f4f7fb; border: 1px solid var(--border); border-radius: 10px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 13px; cursor: pointer; transition: all 0.2s; }
+.task-modal-cancel:hover { border-color: var(--muted); }
+.task-modal-delete { padding: 11px 14px; background: transparent; border: 1px solid var(--border); border-radius: 10px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 13px; cursor: pointer; transition: all 0.2s; }
+.task-modal-delete:hover { border-color: var(--danger); color: var(--danger); }
+
+/* カテゴリ管理リスト */
+.cat-item { display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; background: #f4f7fb; border-radius: 8px; margin-bottom: 6px; font-size: 13px; }
+.cat-item-del { background: transparent; border: 1px solid var(--border); border-radius: 6px; color: var(--muted); font-size: 11px; padding: 3px 8px; cursor: pointer; transition: all 0.18s; }
+.cat-item-del:hover { border-color: var(--danger); color: var(--danger); }
+
+@media (max-width: 1024px) { .kanban-wrap { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .kanban-wrap { grid-template-columns: 1fr; } }
+
+/* ── サブスク管理 ── */
+.sub-summary-row { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px; }
+.sub-summary-card { background:#fff; border:1px solid var(--border); border-radius:12px; padding:14px 20px; box-shadow:var(--shadow); min-width:160px; }
+.sub-summary-label { font-size:11px; color:var(--muted); font-weight:700; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px; }
+.sub-summary-value { font-size:22px; font-weight:800; color:var(--cyan); font-family:'DM Mono',monospace; }
+.sub-summary-unit  { font-size:12px; color:var(--muted); }
+
+.sub-toolbar { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.sub-year-nav { display:flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--border); border-radius:12px; padding:6px 14px; box-shadow:var(--shadow); }
+
+.sub-table-wrap { overflow-x:auto; background:#fff; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
+.sub-table { width:100%; border-collapse:collapse; font-size:12px; font-family:'Noto Sans JP',sans-serif; }
+.sub-table th { background:#f4f7fb; color:var(--muted); font-weight:700; padding:9px 10px; text-align:center; border-bottom:2px solid var(--border); white-space:nowrap; position:sticky; top:0; z-index:1; }
+.sub-table th.sub-th-name { text-align:left; min-width:140px; position:sticky; left:0; background:#f4f7fb; z-index:2; }
+.sub-table td { padding:8px 10px; text-align:right; border-bottom:1px solid var(--border-light,#eef3f9); white-space:nowrap; color:var(--white); }
+.sub-table td.sub-td-name { text-align:left; font-weight:700; position:sticky; left:0; background:#fff; z-index:1; }
+.sub-table td.sub-td-name:hover { color:var(--cyan); cursor:pointer; }
+.sub-table td.sub-td-annual { color:#8b5cf6; font-weight:700; }
+.sub-table td.sub-td-zero { color:#d0dae8; }
+.sub-table tr:hover td { background:rgba(0,184,169,0.04); }
+.sub-table tr.sub-total-row td { background:#f4f7fb; font-weight:800; color:var(--white); border-top:2px solid var(--border); }
+.sub-table tr.sub-total-row td.sub-td-name { color:var(--muted); font-size:11px; letter-spacing:0.05em; }
+.sub-table .sub-annual-total { color:#8b5cf6; font-weight:800; border-left:2px solid var(--border); }
+.sub-cat-badge { display:inline-block; font-size:10px; padding:1px 6px; border-radius:6px; background:rgba(0,184,169,0.1); color:var(--cyan); margin-left:5px; font-weight:400; }
+.sub-cat-summary { display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; background:#fff; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
+.sub-cat-title { font-size:11px; font-weight:700; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; width:100%; margin-bottom:2px; }
+.sub-cat-item { display:flex; align-items:center; gap:6px; background:#f4f7fb; border:1px solid var(--border); border-radius:8px; padding:6px 12px; }
+.sub-cat-name { font-size:12px; font-weight:700; color:var(--white); }
+.sub-cat-amount { font-size:13px; font-weight:800; color:var(--cyan); font-family:'DM Mono',monospace; }
+.sub-cat-pct { font-size:10px; color:var(--muted); }
+
+/* ── スキルアップ ── */
+.skill-top-row { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+.skill-filter-wrap { display: flex; flex-direction: column; gap: 8px; }
+.skill-cat-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.skill-level-row { display: flex; gap: 6px; }
+.skill-top-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.skill-search { background: #fff; border: 1px solid var(--border); border-radius: 16px; color: var(--white); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; padding: 6px 14px; width: 160px; outline: none; box-shadow: var(--shadow); }
+.skill-search:focus { border-color: var(--cyan); }
+.skill-lv-btn { padding: 5px 12px; border-radius: 14px; border: 1px solid var(--border); background: #fff; color: var(--muted); font-size: 12px; font-family: 'Noto Sans JP', sans-serif; cursor: pointer; transition: all 0.18s; box-shadow: var(--shadow); }
+.skill-lv-btn.on { background: var(--cyan); border-color: var(--cyan); color: #fff; font-weight: 700; }
+.skill-lv-btn:hover:not(.on) { border-color: var(--cyan); color: var(--cyan); }
+
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.skill-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; cursor: pointer; transition: box-shadow 0.18s, border-color 0.18s; box-shadow: var(--shadow); animation: fadeIn 0.22s ease; }
+.skill-card:hover { box-shadow: var(--shadow-hover); border-color: var(--cyan); }
+.skill-card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.skill-card-cat { font-size: 10px; padding: 2px 8px; border-radius: 8px; background: rgba(0,184,169,0.1); color: var(--cyan); border: 1px solid rgba(0,184,169,0.2); font-weight: 700; }
+.skill-card-level { font-size: 13px; margin-left: auto; }
+.skill-card-title { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 7px; line-height: 1.5; }
+.skill-card-content { font-size: 12px; color: var(--muted); line-height: 1.7; white-space: pre-wrap; word-break: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 8px; }
+.skill-card-url { font-size: 11px; color: var(--cyan); word-break: break-all; }
+
+/* ヘッダー右側 */
+.header-right { display: flex; align-items: center; gap: 10px; }
+.hdr-btn {
+  padding: 6px 14px; border-radius: 8px;
+  border: 1px solid var(--border); background: #f4f7fb;
+  color: var(--muted); font-size: 12px; font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700; cursor: pointer; transition: all 0.2s;
+  white-space: nowrap;
+}
+.hdr-btn:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,184,169,0.06); }
+.hdr-btn.accent { background: linear-gradient(135deg, var(--cyan), var(--blue)); border: none; color: #fff; box-shadow: 0 2px 8px rgba(0,184,169,0.3); }
+.hdr-btn.accent:hover { opacity: 0.88; transform: translateY(-1px); }
+
+/* カスタム日付ピッカー */
+.date-picker-wrap { position: relative; }
+.date-picker-btn {
+  width: 100%; padding: 10px 13px; background: #fff;
+  border: 1px solid var(--border); border-radius: 9px;
+  color: var(--white); font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px; text-align: left; cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
+}
+.date-picker-btn:hover, .date-picker-btn.open { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(0,184,169,0.12); }
+.date-picker-panel {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 500;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 14px; padding: 16px; width: 310px;
+  box-shadow: 0 8px 32px rgba(0,60,120,0.14);
+  animation: fadeIn 0.18s ease;
+}
+.dp-cal-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; font-weight: 700; font-size: 14px; color: var(--white); }
+.dp-cal-nav button { width: 28px; height: 28px; border: 1px solid var(--border); background: #f4f7fb; border-radius: 7px; cursor: pointer; font-size: 15px; color: var(--muted); display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.dp-cal-nav button:hover { border-color: var(--cyan); color: var(--cyan); }
+.dp-cal-hd { display: grid; grid-template-columns: repeat(7,1fr); margin-bottom: 6px; }
+.dp-cal-hd span { text-align: center; font-size: 11px; font-weight: 700; color: var(--muted); padding: 4px 0; }
+.dp-cal-hd .sat { color: #2563eb; }
+.dp-cal-hd .sun { color: #dc2626; }
+.dp-cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 3px; }
+.dp-day {
+  aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+  border-radius: 7px; font-size: 13px; font-family: 'DM Mono', monospace;
+  cursor: pointer; color: var(--white); transition: all 0.15s;
+  border: 1px solid transparent;
+}
+.dp-day:hover { background: rgba(0,184,169,0.1); border-color: var(--cyan); }
+.dp-day.other { color: #c0d0e0; pointer-events: none; }
+.dp-day.today { border-color: var(--cyan); color: var(--cyan); font-weight: 700; }
+.dp-day.selected { background: var(--cyan); color: #fff !important; font-weight: 700; border-color: var(--cyan); }
+.dp-day.sat { color: #2563eb; }
+.dp-day.sun { color: #dc2626; }
+.dp-time-row { display: flex; align-items: center; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.dp-time-label { font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.dp-time-row select { width: auto; flex: 1; padding: 7px 8px; font-size: 13px; border-radius: 8px; }
+.dp-ok-btn { flex: 1; padding: 8px; background: linear-gradient(135deg, var(--cyan), var(--blue)); border: none; border-radius: 8px; color: #fff; font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+.dp-ok-btn:hover { opacity: 0.88; }
+.dp-clear-btn { padding: 8px 14px; background: #f4f7fb; border: 1px solid var(--border); border-radius: 8px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.dp-clear-btn:hover { border-color: var(--danger); color: var(--danger); }
+/* 日付表示行 */
+.dp-date-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.dp-date-label { font-size: 15px; font-weight: 700; color: var(--white); }
+.dp-toggle-cal { padding: 4px 10px; background: #f4f7fb; border: 1px solid var(--border); border-radius: 7px; color: var(--muted); font-size: 11px; font-family: 'Noto Sans JP', sans-serif; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+.dp-toggle-cal:hover { border-color: var(--cyan); color: var(--cyan); }
+
+.toast { position: fixed; bottom: 24px; right: 24px; background: var(--cyan); color: #fff; padding: 10px 18px; border-radius: 9px; font-size: 13px; font-weight: 700; z-index: 9999; animation: tin 0.3s ease, tout 0.3s ease 1.9s forwards; pointer-events: none; box-shadow: 0 4px 16px rgba(0,184,169,0.4); }
+@keyframes tin { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes tout { to { opacity: 0; } }
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+  .cal-cell { min-height: 60px; }
+  .ppicker { flex-wrap: wrap; }
+}
 </style>
 </head>
 <body>
-<header class="header"><div class="wrap header-inner"><a class="brand" href="#top" aria-label="SPC Web保守診断 トップ"><span class="brand-badge">SPC</span><span class="brand-copy"><strong>Web保守プラン診断</strong><span>Smile Plus Consulting</span></span></a><span class="header-note">安心して続けられるホームページ運用へ</span></div></header>
-<section class="hero" id="top"><div class="wrap hero-content"><div><div class="kicker">SPC WEB MAINTENANCE CHECK</div><h1>そのホームページ、<br><em>いま誰が守っていますか？</em></h1><p class="intro">「サーバーを契約しているから安心」と思っていませんか？<br>5つの質問で現在の管理状況を整理し、必要な保守プランをご案内します。</p><div class="hero-tags"><span>✓ 約1分で診断</span><span>✓ 登録不要</span><span>✓ スマホ対応</span></div></div><div class="hero-visual" aria-hidden="true"><h2>ここが大切なポイント</h2><div class="visual-row"><span class="vicon">🖥️</span><div>サーバーを契約する<small>サーバーを利用するための契約</small></div></div><div class="visual-sign">≠　同じではありません</div><div class="visual-row"><span class="vicon">🛡️</span><div>サーバーを保守する<small>脆弱性や障害への対応</small></div></div><div class="visual-row"><span class="vicon">💾</span><div>サイトを保守する<small>バックアップ・データ復旧など</small></div></div><p class="visual-bottom">契約先ではなく「実際に誰が対応するか」が重要です。</p></div></div></section>
-<main class="main"><div class="wrap"><div class="grid"><section class="card quiz" id="quiz" aria-labelledby="quiz-title"><div class="quiz-head"><h2 id="quiz-title">あなたの保守状況をチェック</h2><span class="step-tag" id="step-tag">質問 1 / 5</span></div><div class="progress" role="progressbar" aria-label="診断の進み具合" aria-valuemin="0" aria-valuemax="5" aria-valuenow="1" id="progress"><div class="progress-fill" id="progress-fill"></div></div><div class="quiz-body"><div class="q-label" id="q-label">QUESTION 01</div><h3 class="q-title" id="q-title"></h3><p class="q-help" id="q-help"></p><div class="options" id="options" role="group" aria-label="回答を選択"></div></div><div class="quiz-actions"><button type="button" class="btn" id="back-btn">← 戻る</button><button type="button" class="btn btn-primary" id="next-btn" disabled>次の質問へ →</button></div><p class="small-note" style="padding:0 20px 24px">※ この診断は目安です。最終的な保守範囲はサイトの状況を確認して決定します。</p></section><section class="card result" id="result" aria-live="polite"><div class="result-header"><span class="result-check">✓</span><div><h2>診断結果</h2><p>回答内容から、こちらをご案内します。</p></div></div><div class="result-card" id="result-card"><div class="result-kicker" id="result-kicker">おすすめの保守プラン</div><div class="result-planline"><strong id="result-name"></strong><span class="price"><small>月額</small><span id="result-price"></span>円</span></div><p class="result-sub" id="result-sub"></p><div class="included" id="result-included"></div></div><div class="why"><strong>このプランをご案内する理由</strong><p id="result-reason"></p></div><div class="status-box"><h3>現在の保守状況について</h3><p id="result-status"></p></div><div class="result-actions"><button class="btn btn-primary" id="copy-btn" type="button">相談内容をコピー</button><button class="btn btn-light" id="print-btn" type="button">診断結果を印刷</button><button class="btn" id="restart-btn" type="button">もう一度診断</button></div><p class="notice">コピーした診断内容をSPCへのお問い合わせ時にお伝えください。内容は自動送信されません。</p><p class="notice">※ 保守対象が20ページを超える場合や、サーバー内に別のWebシステムがある場合は別途お見積りとなります。</p></section><aside class="card side" id="side"><h3>「保守」で守ることは3つあります</h3><p>サーバーやドメインを契約しているだけでは、下記の対応がすべて含まれるとは限りません。</p><div class="point"><div class="point-icon">A</div><div><strong>サーバー保守</strong><span>PHPなどの脆弱性・稼働状況・サーバー障害への対応</span></div></div><div class="point"><div class="point-icon">B</div><div><strong>サイト保守</strong><span>定期バックアップ・表示不具合の確認・データ復旧対応</span></div></div><div class="point"><div class="point-icon">C</div><div><strong>サイト更新代行</strong><span>月1回のお知らせ掲載・文章や画像の差し替え</span></div></div><div class="callout"><strong>「わからない」でも大丈夫。</strong><br>現在の契約内容が不明な場合も、おすすめの目安と確認ポイントをご案内します。</div></aside></div><section class="plans-section" id="plans-section" aria-labelledby="plans-heading"><h2 class="section-heading" id="plans-heading">選べる4つの保守プラン</h2><p class="section-lead">必要なサポート範囲に合わせてお選びいただけます。</p><div class="plans"><article class="plan pink" data-plan="hana"><span class="plan-ribbon">診断結果</span><div class="plan-flower" aria-hidden="true">🌸</div><h3>花梅プラン</h3><p class="plan-cap">サーバーの安全管理を中心とした基本プラン</p><div class="plan-price"><small>月額</small> 5,000<small>円</small></div><ul><li>サーバー保守（A）</li><li>PHPなどの脆弱性対応</li><li>サーバー障害時の対応</li></ul></article><article class="plan green" data-plan="mi"><span class="plan-ribbon">診断結果</span><div class="plan-flower" aria-hidden="true">🍀</div><h3>実梅プラン</h3><p class="plan-cap">ホームページのデータ保護を中心としたプラン</p><div class="plan-price"><small>月額</small> 5,000<small>円</small></div><ul><li>サイト保守（B）</li><li>定期バックアップ</li><li>不具合時の復旧対応</li></ul><p class="plan-mini">※ 簡易な文字更新は含みません。</p></article><article class="plan blue" data-plan="take"><span class="plan-ribbon">診断結果</span><div class="plan-flower" aria-hidden="true">🎋</div><h3>竹プラン</h3><p class="plan-cap">サーバーもサイトもまとめて守る安心プラン</p><div class="plan-price"><small>月額</small> 10,000<small>円</small></div><ul><li>サーバー保守（A）</li><li>サイト保守（B）</li><li>脆弱性・障害対応</li><li>バックアップ・復旧対応</li></ul></article><article class="plan purple" data-plan="matsu"><span class="plan-ribbon">診断結果</span><div class="plan-flower" aria-hidden="true">🌲</div><h3>松プラン</h3><p class="plan-cap">保守から更新までお任せの総合プラン</p><div class="plan-price"><small>月額</small> 15,000<small>円</small></div><ul><li>サーバー保守（A）</li><li>サイト保守（B）</li><li>サイト更新代行（C）</li><li>月1回のホームページ更新</li></ul></article></div><p class="footer-note">※ 上記金額はご案内用の月額料金です。初期対応、保守対象範囲、契約条件、消費税の扱いはご契約前にご確認ください。<br>※ 本診断はプラン選びの参考情報であり、現時点のサイトの安全性を技術的に検査・保証するものではありません。</p></section></div></main>
-<footer class="foot"><div class="wrap foot-inner"><strong>SPC｜大切なホームページを、ずっと安心に。</strong><span>Planning &amp; Support by Smile Plus Consulting</span></div></footer><div id="live-status" role="status" aria-live="polite"></div>
+
+<header>
+  <div class="logo" onclick="gotoTab('calendar', document.querySelectorAll('.tab')[1])" style="cursor:pointer;" title="カレンダーへ">
+    <div class="logo-icon">📅</div>
+    SNS投稿マネージャー
+  </div>
+  <div class="header-right">
+    <div class="header-date" id="hDate"></div>
+    <button class="hdr-btn" onclick="backupData()">⬇️ バックアップ</button>
+    <button class="hdr-btn accent" onclick="document.getElementById('restoreFile').click()">⬆️ データ復元</button>
+    <input type="file" id="restoreFile" accept=".json" style="display:none" onchange="restoreData(event)">
+  </div>
+</header>
+
+<div class="tab-bar">
+  <div class="tab" onclick="gotoTab('today',this)">📌 今日の投稿</div>
+  <div class="tab active" onclick="gotoTab('calendar',this)">📅 カレンダー</div>
+  <div class="tab" onclick="gotoTab('create',this)">✏️ ネタ作成</div>
+  <div class="tab" onclick="gotoTab('stock',this)">📦 ネタ一覧</div>
+  <div class="tab" onclick="gotoTab('task',this)">✅ タスク管理</div>
+  <div class="tab" onclick="gotoTab('sub',this)">💳 サブスク管理</div>
+  <div class="tab" onclick="gotoTab('skill',this)">📚 スキルアップ</div>
+</div>
+
+<!-- 今日の投稿 -->
+<div id="view-today" class="view">
+  <div class="today-hero">
+    <div>
+      <div class="today-title">今日の投稿</div>
+      <div class="today-sub" id="todayLabel"></div>
+    </div>
+    <div class="today-count" id="todayNum">0<span>件</span></div>
+  </div>
+  <div class="today-grid" id="todayList"></div>
+</div>
+
+<!-- カレンダー -->
+<div id="view-calendar" class="view active">
+  <!-- 週次スケジュール -->
+  <div class="weekly-schedule" id="weeklySchedule">
+    <div class="ws-header" onclick="toggleWeekly()">
+      <span>📋 noteルーティン（週次スケジュール）</span>
+      <span class="ws-toggle" id="wsToggle">▼ 展開する</span>
+    </div>
+    <div class="ws-body" id="wsBody" style="display:none;">
+      <div class="ws-grid">
+        <div class="ws-item">
+          <div class="ws-day">日〜月</div>
+          <div class="ws-task">📝 次の記事の経験・ネタをGPTと整理</div>
+        </div>
+        <div class="ws-item ws-highlight">
+          <div class="ws-day">火曜 20:30</div>
+          <div class="ws-task">🟢 無料note公開</div>
+        </div>
+        <div class="ws-item">
+          <div class="ws-day">水〜木</div>
+          <div class="ws-task">💬 コメント・反応を見る／次の記事制作</div>
+        </div>
+        <div class="ws-item ws-highlight">
+          <div class="ws-day">金曜 20:30</div>
+          <div class="ws-task">🟢 2本目公開</div>
+        </div>
+        <div class="ws-item">
+          <div class="ws-day">土曜</div>
+          <div class="ws-task">📊 数字を軽く確認。売れた・売れないで一喜一憂せず、次の記事の材料を集める</div>
+        </div>
+      </div>
+
+      <!-- 集客スケジュール -->
+      <hr class="ws-divider">
+      <div class="ws-section-title">📣 集客投稿スケジュール</div>
+      <div class="ws-collect-grid">
+        <div class="ws-collect-item">
+          <div class="ws-collect-platform">T Threads</div>
+          <div class="ws-collect-times">
+            <span>水曜 9:00</span><span>月曜 12:00</span>
+          </div>
+        </div>
+        <div class="ws-collect-item">
+          <div class="ws-collect-platform">𝕏 X</div>
+          <div class="ws-collect-times">
+            <span>水曜 12:30</span><span>月曜 14:30</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cal-nav">
+    <button class="nav-btn" onclick="chMonth(-1)">←</button>
+    <h2 id="calTitle"></h2>
+    <button class="nav-btn" onclick="chMonth(1)">→</button>
+    <button class="nav-today-btn" onclick="goToday()">今月</button>
+  </div>
+  <div class="cal-grid-hd">
+    <div class="cal-hd hd-mon">月</div><div class="cal-hd hd-tue">火</div><div class="cal-hd hd-wed">水</div>
+    <div class="cal-hd hd-thu">木</div><div class="cal-hd hd-fri">金</div><div class="cal-hd hd-sat">土</div><div class="cal-hd hd-sun">日</div>
+  </div>
+  <div class="cal-grid" id="calGrid"></div>
+  <div id="dayDetail" style="margin-top:20px;"><div class="dd-placeholder">📅 日付をクリックするとその日の投稿が表示されます</div></div>
+</div>
+
+<!-- ネタ作成 -->
+<div id="view-create" class="view">
+  <div id="editNotice" class="edit-notice">✏️ 編集モード中です</div>
+
+  <div class="form-sec">
+    <label class="flabel">投稿先・掲載先</label>
+    <div class="ppicker" id="ppicker">
+      <button class="pbtn" data-p="X" onclick="toggleP('X')">𝕏 X</button>
+      <button class="pbtn" data-p="Threads" onclick="toggleP('Threads')">Threads</button>
+      <button class="pbtn" data-p="Facebook" onclick="toggleP('Facebook')">Facebook</button>
+      <button class="pbtn" data-p="note" onclick="toggleP('note')">📝 note</button>
+      <button class="pbtn" data-p="BASE" onclick="toggleP('BASE')">🛒 BASE</button>
+      <button class="pbtn" data-p="Instagram" onclick="toggleP('Instagram')">📸 Instagram</button>
+      <button class="pbtn" data-p="YouTube" onclick="toggleP('YouTube')">▶️ YouTube</button>
+      <button class="pbtn" data-p="Amazon" onclick="toggleP('Amazon')">🛒 Amazon</button>
+      <button class="pbtn" data-p="Rakuten" onclick="toggleP('Rakuten')">🛍️ 楽天</button>
+    </div>
+  </div>
+
+  <!-- note/BASE選択時に表示される元ネタ欄 -->
+  <div class="source-box" id="sourceBox">
+    <div class="source-box-title" id="sourceBoxLabel">📝 note 掲載情報</div>
+    <div class="form-sec" style="margin-bottom:10px;">
+      <label class="flabel">タイトル</label>
+      <input type="text" id="fSourceTitle" placeholder="例：AIツールで時短！中小企業のSNS運用術">
+    </div>
+    <div class="form-sec" style="margin-bottom:0;">
+      <label class="flabel">URL（任意）</label>
+      <input type="text" id="fSourceUrl" placeholder="https://note.com/...">
+    </div>
+  </div>
+
+  <div class="form-sec">
+    <label class="flabel">投稿テキスト <span style="font-size:10px;color:var(--muted);font-weight:400;">（SNSに投稿する告知文）</span></label>
+    <textarea id="fText" placeholder="投稿内容を入力...&#10;ハッシュタグもここに書いておくと便利です" oninput="updateCC()"></textarea>
+    <div class="char-cc" id="charCC">0 文字</div>
+  </div>
+  <div class="form-row">
+    <div class="form-sec">
+      <label class="flabel">投稿予定日時</label>
+      <div class="date-picker-wrap" id="datePickerWrap">
+        <button type="button" class="date-picker-btn" onclick="toggleDatePicker()">
+          <span id="datePickerLabel">📅 日付・時間を選択</span>
+        </button>
+        <div class="date-picker-panel" id="datePickerPanel" style="display:none;">
+          <!-- 日付表示 + 変更トグル -->
+          <div class="dp-date-row">
+            <span class="dp-date-label" id="dpDateLabel">📅 日付未設定</span>
+            <button type="button" class="dp-toggle-cal" onclick="toggleDpCal()">日付変更 ▾</button>
+          </div>
+          <!-- カレンダーグリッド（デフォルト非表示） -->
+          <div id="dpCalArea" style="display:none;">
+            <div class="dp-cal-nav">
+              <button type="button" onclick="dpChangeMonth(-1)">‹</button>
+              <span id="dpCalTitle"></span>
+              <button type="button" onclick="dpChangeMonth(1)">›</button>
+            </div>
+            <div class="dp-cal-hd">
+              <span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span class="sat">土</span><span class="sun">日</span>
+            </div>
+            <div class="dp-cal-grid" id="dpCalGrid"></div>
+          </div>
+          <!-- 時間選択（常に表示） -->
+          <div class="dp-time-row">
+            <label class="dp-time-label">🕐 時間</label>
+            <select id="dpHour" onchange="updateDatePickerLabel()"></select>
+            <span>:</span>
+            <select id="dpMin" onchange="updateDatePickerLabel()"></select>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:10px;">
+            <button type="button" class="dp-ok-btn" onclick="closeDatePicker()">✅ 確定</button>
+            <button type="button" class="dp-clear-btn" onclick="clearDatePicker()">クリア</button>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" id="fDate">
+    </div>
+    <div class="form-sec">
+      <label class="flabel">ステータス</label>
+      <select id="fStatus">
+        <option value="draft">📝 下書き</option>
+        <option value="scheduled">📅 投稿予定</option>
+        <option value="promo">📣 集客投稿</option>
+        <option value="affiliate">💰 アフィリエイト投稿</option>
+        <option value="posted">✅ 投稿済み</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-sec">
+    <label class="flabel">メモ（自分だけ見えます）</label>
+    <input type="text" id="fMemo" placeholder="例：画像あり、ハッシュタグ確認済み">
+  </div>
+  <button class="btn-save" onclick="savePost()">💾 保存する</button>
+  <button class="btn-clear" onclick="clearForm()">クリア</button>
+</div>
+
+<!-- ネタ一覧 -->
+<div id="view-stock" class="view">
+  <div class="sfilter-row">
+    <button class="sfbtn on" data-f="all" onclick="setSF('all',this)">すべて</button>
+    <button class="sfbtn" data-f="draft" onclick="setSF('draft',this)">📝 下書き</button>
+    <button class="sfbtn" data-f="scheduled" onclick="setSF('scheduled',this)">📅 予定</button>
+    <button class="sfbtn" data-f="promo" onclick="setSF('promo',this)">📣 集客投稿</button>
+    <button class="sfbtn" data-f="affiliate" onclick="setSF('affiliate',this)">💰 アフィリ</button>
+    <button class="sfbtn" data-f="posted" onclick="setSF('posted',this)">✅ 済み</button>
+    <input class="sf-srch" type="text" placeholder="🔍 検索..." id="stockSearch" oninput="renderStock()">
+  </div>
+  <div class="stock-grid" id="stockList"></div>
+</div>
+
+<!-- タスク管理 -->
+<div id="view-task" class="view">
+
+  <!-- カテゴリフィルター -->
+  <div class="task-top-row">
+    <div class="task-cat-row" id="taskCatRow"></div>
+    <div class="task-top-right">
+      <button class="task-add-cat-btn" onclick="openAddCatModal()">＋ カテゴリ追加</button>
+      <button class="task-add-btn" onclick="openTaskModal(null, 'todo')">＋ タスク追加</button>
+    </div>
+  </div>
+
+  <!-- カンバン5列 -->
+  <div class="kanban-wrap">
+    <div class="kanban-col kanban-priority">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">🤝</span>商談
+        <span class="kanban-count" id="cnt-priority">0</span>
+      </div>
+      <div class="kanban-cards" id="col-priority"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'priority')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-urgent">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">⭐</span>優先
+        <span class="kanban-count" id="cnt-urgent">0</span>
+      </div>
+      <div class="kanban-cards" id="col-urgent"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'urgent')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-todo">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">📄</span>提案書・見積書
+        <span class="kanban-count" id="cnt-todo">0</span>
+      </div>
+      <div class="kanban-cards" id="col-todo"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'todo')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-doing">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">⚙️</span>施策・進行中
+        <span class="kanban-count" id="cnt-doing">0</span>
+      </div>
+      <div class="kanban-cards" id="col-doing"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'doing')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-review">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">📨</span>請求書送付
+        <span class="kanban-count" id="cnt-review">0</span>
+      </div>
+      <div class="kanban-cards" id="col-review"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'review')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-done">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">✅</span>完了
+        <span class="kanban-count" id="cnt-done">0</span>
+      </div>
+      <div class="kanban-cards" id="col-done"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'done')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-repeat">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">🔄</span>継続取引（月額）
+        <span class="kanban-count" id="cnt-repeat">0</span>
+      </div>
+      <div class="kanban-cards" id="col-repeat"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'repeat')">＋ 追加</button>
+    </div>
+    <div class="kanban-col kanban-annual">
+      <div class="kanban-col-header">
+        <span class="kanban-col-icon">📆</span>継続取引（年額）
+        <span class="kanban-count" id="cnt-annual">0</span>
+      </div>
+      <div class="kanban-cards" id="col-annual"></div>
+      <button class="kanban-add-btn" onclick="openTaskModal(null,'annual')">＋ 追加</button>
+    </div>
+  </div>
+
+  <!-- タスク追加・編集モーダル -->
+  <div id="taskModal" class="task-modal-overlay" style="display:none;" onclick="closeTaskModalOutside(event)">
+    <div class="task-modal">
+      <div class="task-modal-title" id="taskModalTitle">タスク追加</div>
+
+      <div class="task-modal-sec">
+        <label class="task-modal-label">タイトル</label>
+        <input type="text" id="tmTitle" placeholder="タスク名を入力">
+      </div>
+
+      <div class="task-modal-sec">
+        <label class="task-modal-label">カテゴリ</label>
+        <select id="tmCat"></select>
+      </div>
+
+      <div class="task-modal-sec">
+        <label class="task-modal-label">ステータス</label>
+        <select id="tmStatus">
+          <option value="priority">🤝 商談</option>
+          <option value="urgent">⭐ 優先</option>
+          <option value="todo">📄 提案書・見積書</option>
+          <option value="doing">⚙️ 施策・進行中</option>
+          <option value="review">📨 請求書送付</option>
+          <option value="done">✅ 完了</option>
+          <option value="repeat">🔄 継続取引（月額）</option>
+          <option value="annual">📆 継続取引（年額）</option>
+        </select>
+      </div>
+
+      <div class="task-modal-sec">
+        <label class="task-modal-label">売上・原価・利益</label>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:end;">
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">売上（円）</div>
+            <input type="number" id="tmSales" placeholder="0" min="0" oninput="calcProfit()">
+          </div>
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">原価（円）</div>
+            <input type="number" id="tmCost" placeholder="0" min="0" oninput="calcProfit()">
+          </div>
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">利益（自動）</div>
+            <div id="tmProfit" style="padding:10px 13px;background:#f4f7fb;border:1px solid var(--border);border-radius:9px;font-size:13px;font-weight:700;color:var(--cyan);text-align:right;">0 円</div>
+          </div>
+        </div>
+      </div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">メモ</label>
+        <textarea id="tmMemo" placeholder="詳細・備考など" style="min-height:80px;"></textarea>
+      </div>
+
+      <div class="task-modal-actions">
+        <button class="task-modal-save" onclick="saveTask()">💾 保存</button>
+        <button class="task-modal-cancel" onclick="closeTaskModal()">キャンセル</button>
+        <button class="task-modal-delete" id="tmDeleteBtn" onclick="deleteTask()" style="display:none;">🗑️ 削除</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- カテゴリ追加モーダル -->
+  <div id="catModal" class="task-modal-overlay" style="display:none;" onclick="closeCatModalOutside(event)">
+    <div class="task-modal" style="max-width:360px;">
+      <div class="task-modal-title">カテゴリ管理</div>
+      <div id="catList" style="margin-bottom:14px;"></div>
+      <div style="display:flex;gap:8px;">
+        <input type="text" id="newCatInput" placeholder="新しいカテゴリ名" style="flex:1;">
+        <button class="task-modal-save" style="width:auto;padding:8px 16px;" onclick="addCategory()">追加</button>
+      </div>
+      <button class="task-modal-cancel" style="margin-top:10px;width:100%;" onclick="closeCatModal()">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- サブスク管理 -->
+<div id="view-sub" class="view">
+
+  <!-- サマリー -->
+  <div class="sub-summary-row" id="subSummary"></div>
+  <!-- カテゴリ別集計 -->
+  <div id="subCatSummary" style="margin-bottom:14px;display:none;"></div>
+
+  <!-- ツールバー -->
+  <div class="sub-toolbar">
+    <div class="sub-year-nav">
+      <button class="nav-btn" onclick="subChangeYear(-1)">←</button>
+      <span id="subYearLabel" style="font-size:16px;font-weight:700;min-width:60px;text-align:center;"></span>
+      <button class="nav-btn" onclick="subChangeYear(1)">→</button>
+    </div>
+    <button class="task-add-btn" onclick="openSubModal(null)">＋ サブスク追加</button>
+  </div>
+
+  <!-- 表 -->
+  <div class="sub-table-wrap">
+    <table class="sub-table" id="subTable"></table>
+  </div>
+
+  <!-- モーダル -->
+  <div id="subModal" class="task-modal-overlay" style="display:none;" onclick="closeSubModalOutside(event)">
+    <div class="task-modal" style="max-width:440px;">
+      <div class="task-modal-title" id="subModalTitle">サブスク追加</div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">サービス名</label>
+        <input type="text" id="smSubName" placeholder="例：Claude Pro">
+      </div>
+      <div class="task-modal-sec" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div>
+          <label class="task-modal-label">課金タイプ</label>
+          <select id="smSubType" onchange="toggleSubMonth()">
+            <option value="monthly">📅 月額</option>
+            <option value="annual">📆 年額（年1回）</option>
+          </select>
+        </div>
+        <div>
+          <label class="task-modal-label">金額（円）</label>
+          <input type="number" id="smSubAmount" placeholder="3000" min="0">
+        </div>
+      </div>
+      <div class="task-modal-sec" id="smSubMonthWrap" style="display:none;">
+        <label class="task-modal-label">課金月（年額の場合）</label>
+        <select id="smSubMonth">
+          <option value="1">1月</option>
+          <option value="2">2月</option>
+          <option value="3">3月</option>
+          <option value="4">4月</option>
+          <option value="5">5月</option>
+          <option value="6">6月</option>
+          <option value="7">7月</option>
+          <option value="8">8月</option>
+          <option value="9">9月</option>
+          <option value="10">10月</option>
+          <option value="11">11月</option>
+          <option value="12">12月</option>
+        </select>
+      </div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">カテゴリ</label>
+        <input type="text" id="smSubCat" placeholder="例：AI・デザイン・開発">
+      </div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">メモ</label>
+        <input type="text" id="smSubNote" placeholder="備考など">
+      </div>
+      <div class="task-modal-actions">
+        <button class="task-modal-save" onclick="saveSub()">💾 保存</button>
+        <button class="task-modal-cancel" onclick="closeSubModal()">キャンセル</button>
+        <button class="task-modal-delete" id="smSubDel" onclick="deleteSub()" style="display:none;">🗑️ 削除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- スキルアップ -->
+<div id="view-skill" class="view">
+
+  <!-- フィルター行 -->
+  <div class="skill-top-row">
+    <div class="skill-filter-wrap">
+      <div class="skill-cat-row" id="skillCatRow"></div>
+      <div class="skill-level-row">
+        <button class="skill-lv-btn on" data-lv="all" onclick="setSkillFilter('lv','all',this)">すべて</button>
+        <button class="skill-lv-btn" data-lv="1" onclick="setSkillFilter('lv','1',this)">⭐</button>
+        <button class="skill-lv-btn" data-lv="2" onclick="setSkillFilter('lv','2',this)">⭐⭐</button>
+        <button class="skill-lv-btn" data-lv="3" onclick="setSkillFilter('lv','3',this)">⭐⭐⭐</button>
+      </div>
+    </div>
+    <div class="skill-top-right">
+      <input class="skill-search" type="text" id="skillSearch" placeholder="🔍 検索..." oninput="renderSkills()">
+      <button class="task-add-cat-btn" onclick="openSkillCatModal()">＋ カテゴリ</button>
+      <button class="task-add-btn" onclick="openSkillModal(null)">＋ スキル追加</button>
+    </div>
+  </div>
+
+  <!-- スキルカード一覧 -->
+  <div class="skill-grid" id="skillList"></div>
+
+  <!-- スキル追加・編集モーダル -->
+  <div id="skillModal" class="task-modal-overlay" style="display:none;" onclick="closeSkillModalOutside(event)">
+    <div class="task-modal" style="max-width:500px;">
+      <div class="task-modal-title" id="skillModalTitle">スキル追加</div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">タイトル</label>
+        <input type="text" id="smTitle" placeholder="例：Cloudflare Workers KV の使い方">
+      </div>
+      <div class="task-modal-sec" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div>
+          <label class="task-modal-label">カテゴリ</label>
+          <select id="smCat"></select>
+        </div>
+        <div>
+          <label class="task-modal-label">習熟度</label>
+          <select id="smLevel">
+            <option value="1">⭐ 知っている</option>
+            <option value="2">⭐⭐ 使えるレベル</option>
+            <option value="3">⭐⭐⭐ マスター</option>
+          </select>
+        </div>
+      </div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">内容・メモ</label>
+        <textarea id="smContent" placeholder="手順・ポイント・気づきなど" style="min-height:100px;"></textarea>
+      </div>
+      <div class="task-modal-sec">
+        <label class="task-modal-label">参考URL（任意）</label>
+        <input type="text" id="smUrl" placeholder="https://...">
+      </div>
+      <div class="task-modal-actions">
+        <button class="task-modal-save" onclick="saveSkill()">💾 保存</button>
+        <button class="task-modal-cancel" onclick="closeSkillModal()">キャンセル</button>
+        <button class="task-modal-delete" id="smDeleteBtn" onclick="deleteSkill()" style="display:none;">🗑️ 削除</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- カテゴリ管理モーダル -->
+  <div id="skillCatModal" class="task-modal-overlay" style="display:none;" onclick="closeSkillCatModalOutside(event)">
+    <div class="task-modal" style="max-width:360px;">
+      <div class="task-modal-title">カテゴリ管理</div>
+      <div id="skillCatList" style="margin-bottom:14px;"></div>
+      <div style="display:flex;gap:8px;">
+        <input type="text" id="newSkillCatInput" placeholder="新しいカテゴリ名" style="flex:1;">
+        <button class="task-modal-save" style="width:auto;padding:8px 16px;" onclick="addSkillCategory()">追加</button>
+      </div>
+      <button class="task-modal-cancel" style="margin-top:10px;width:100%;" onclick="closeSkillCatModal()">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
 <script>
-(()=>{'use strict';
-const questions=[
- {title:'サーバーやドメインの契約は、どなたが管理していますか？',help:'契約先と「保守の担当者」は別の場合があります。わかる範囲でお答えください。',options:[{v:'self',t:'自社（自分）で契約・管理している',s:'レンタルサーバー会社へ直接支払っている場合など'},{v:'other',t:'制作会社・SPCなどに任せている',s:'契約や支払いを外部にお願いしている場合など'},{v:'unknown',t:'よくわからない',s:'契約状況を確認したことがない'}]},
- {title:'PHPなどの脆弱性対策や、サーバー障害への対応担当者は決まっていますか？',help:'「サーバーを契約している」ことと、「脆弱性対応を任せている」ことは異なります。',options:[{v:'yes',t:'はい。対応する担当者・契約がある'},{v:'no',t:'いいえ。保守は特に依頼していない'},{v:'unknown',t:'わからない・確認できていない'}]},
- {title:'ホームページのバックアップや、不具合時の復旧をお願いできる先はありますか？',help:'バックアップの取得だけでなく、いざというときの復旧対応もポイントです。',options:[{v:'yes',t:'はい。対応する担当者・契約がある'},{v:'no',t:'いいえ。特に依頼していない'},{v:'unknown',t:'わからない・確認できていない'}]},
- {title:'これからSPCに、どの範囲の保守をお願いしたいですか？',help:'現在の契約とは別に、「今後どうしたいか」でお選びください。',options:[{v:'a',t:'サーバーの安全対策（A）をお願いしたい',s:'PHPなどの脆弱性・障害への対応が気になる'},{v:'b',t:'サイトのバックアップ・復旧（B）をお願いしたい',s:'データ消失や表示不具合に備えたい'},{v:'ab',t:'サーバーもサイトも両方（A＋B）お願いしたい',s:'安心できる状態をまとめて整えたい'},{v:'unknown',t:'どこまで必要か、まだわからない',s:'保守状況を確認してから決めたい'}]},
- {title:'お知らせ掲載や、文章・画像の差し替えもSPCにお願いしたいですか？',help:'「サイト更新代行（C）」は、月1回の更新作業を想定しています。',options:[{v:'yes',t:'はい。月1回の更新もお願いしたい'},{v:'no',t:'いいえ。更新代行は必要ない'},{v:'unknown',t:'まだ決めていない・相談したい'}]}
-];
-const plans={hana:{name:'花梅プラン',price:'5,000',sub:'サーバー保守（A）が中心の基本プラン',features:['サーバー保守（A）','PHPなどの脆弱性対応','サーバー障害時の復旧対応'],color:'pink'},mi:{name:'実梅プラン',price:'5,000',sub:'サイト保守（B）とデータ保護が中心のプラン',features:['サイト保守（B）','定期バックアップ','不具合時の復旧対応'],color:'green'},take:{name:'竹プラン',price:'10,000',sub:'サーバーとサイトの両方を守る安心プラン',features:['サーバー保守（A）','サイト保守（B）','セキュリティ・障害対応','バックアップ・復旧対応'],color:'blue'},matsu:{name:'松プラン',price:'15,000',sub:'保守（A＋B）に更新代行（C）も含む総合プラン',features:['サーバー保守（A）','サイト保守（B）','サイト更新代行（C）','月1回のホームページ更新'],color:'purple'}};
-const state={index:0,answers:Array(questions.length).fill(null),result:null};
-const $=id=>document.getElementById(id);
-function renderQuestion(){const q=questions[state.index];$('q-label').textContent=`QUESTION ${String(state.index+1).padStart(2,'0')}`;$('q-title').textContent=q.title;$('q-help').textContent=q.help;$('step-tag').textContent=`質問 ${state.index+1} / 5`;$('progress').setAttribute('aria-valuenow',String(state.index+1));$('progress-fill').style.width=`${(state.index+1)*20}%`;$('options').replaceChildren();for(const opt of q.options){const b=document.createElement('button');b.type='button';b.className='option';b.setAttribute('aria-pressed',String(state.answers[state.index]===opt.v));const circle=document.createElement('span');circle.className='circle';circle.textContent='✓';circle.setAttribute('aria-hidden','true');const body=document.createElement('span');const strong=document.createElement('strong');strong.textContent=opt.t;body.appendChild(strong);if(opt.s){const small=document.createElement('small');small.textContent=opt.s;body.appendChild(small)}b.append(circle,body);b.addEventListener('click',()=>{state.answers[state.index]=opt.v;renderQuestion()});$('options').appendChild(b)}$('back-btn').disabled=state.index===0;$('next-btn').disabled=!state.answers[state.index];$('next-btn').textContent=state.index===4?'診断結果を見る →':'次の質問へ →'}
-function decide(){const [contract,server,site,scope,update]=state.answers;let key,reason,qual='';if(update==='yes'){key='matsu';reason='月1回の更新代行（C）をご希望のため、A・Bの保守も含む松プランをご案内します。';if(scope==='a'||scope==='b')qual='更新代行（C）は松プランに含まれるため、ご希望の保守範囲より広い内容になります。';}else if(scope==='a'){key='hana';reason='サーバーの安全対策（A）を希望されているため、花梅プランが基本の候補です。';}else if(scope==='b'){key='mi';reason='サイトのバックアップ・復旧（B）を希望されているため、実梅プランが基本の候補です。';}else{key='take';reason=scope==='ab'?'サーバーとサイトの両方の保守（A＋B）をご希望のため、竹プランが基本の候補です。':'必要な保守範囲がまだわからないため、サーバーとサイトをまとめて守る竹プランを、相談時の比較候補としてご案内します。';}
-if(qual)reason+=' '+qual;if(update==='unknown')reason+=' 更新代行も必要な場合は、松プラン（月額15,000円）をご検討ください。';
-const statuses=[];if(contract==='self')statuses.push('サーバー・ドメインはご自身で契約中ですね。契約しているだけでは保守の実施は確認できません。');else if(contract==='other')statuses.push('契約を制作会社等へ任せていても、PHPなどの保守が含まれるかは別途確認が必要です。');else statuses.push('まずサーバー・ドメインの契約先と管理担当者を確認しましょう。');
-if(server==='no')statuses.push('サーバーの脆弱性対策や障害対応の担当者がいないため、対応範囲の確認をおすすめします。');else if(server==='unknown')statuses.push('サーバー保守については契約内容を確認しましょう。');else statuses.push('サーバー保守の担当者がいるとのことなので、SPCと役割が重複しないか確認しましょう。');
-if(site==='no')statuses.push('サイトのバックアップ・復旧についても、対応体制の確認をおすすめします。');else if(site==='unknown')statuses.push('バックアップの取得と復旧の担当者・方法を確認しましょう。');else statuses.push('サイト保守の担当者がいるとのことなので、SPCと役割が重複しないか確認しましょう。');
-if(server==='yes'&&site==='yes')statuses.push('現在の保守で十分な場合は追加契約が不要なこともあります。まず既存の内容を見直しましょう。');
-if(scope==='unknown')statuses.push('何を任せたいかが未確定なので、診断結果は仮のご案内です。');
-return {key,plan:plans[key],reason,status:statuses.join('\n\n')};}
-function renderResult(){const r=decide();state.result=r;$('quiz').classList.add('hidden');$('side').classList.add('hidden');$('result').classList.add('show');$('result-card').className='result-card '+r.plan.color;$('result-name').textContent=r.plan.name;$('result-price').textContent=r.plan.price;$('result-sub').textContent=r.plan.sub;$('result-kicker').textContent=state.answers[3]==='unknown'?'ご相談時の比較候補':'おすすめの保守プラン';$('result-included').replaceChildren();for(const f of r.plan.features){const span=document.createElement('span');span.textContent='✓ '+f;$('result-included').append(span)}$('result-reason').textContent=r.reason;$('result-status').textContent=r.status;for(const e of document.querySelectorAll('.plan'))e.classList.toggle('active',e.dataset.plan===r.key);$('result').scrollIntoView({behavior:'smooth',block:'start'});$('live-status').textContent='診断が完了しました。'+r.plan.name+'をご案内します。'}
-function restart(){state.index=0;state.answers.fill(null);state.result=null;$('result').classList.remove('show');$('quiz').classList.remove('hidden');$('side').classList.remove('hidden');for(const e of document.querySelectorAll('.plan'))e.classList.remove('active');renderQuestion();$('quiz').scrollIntoView({behavior:'smooth',block:'start'})}
-function copySummary(){const r=state.result;if(!r)return;const label=(i)=>{const q=questions[i];const o=q.options.find(x=>x.v===state.answers[i]);return o?o.t:'未回答'};const lines=['【SPC Web保守プラン診断結果】','ご案内：'+r.plan.name,'月額：'+r.plan.price+'円','対象：'+r.plan.features.join('／'),'','【回答内容】',...questions.map((q,i)=>`${i+1}. ${q.title}\n　${label(i)}`),'','【診断理由】',r.reason,'','【保守状況の確認ポイント】',r.status,'','※ 診断結果は目安です。実際の保守内容とお見積りは確認のうえ決定します。'];const txt=lines.join('\n');if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(()=>flash('相談内容をコピーしました')).catch(()=>fallbackCopy(txt));}else fallbackCopy(txt)}
-function fallbackCopy(txt){const area=document.createElement('textarea');area.value=txt;area.style.position='fixed';area.style.left='-9999px';document.body.appendChild(area);area.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}area.remove();flash(ok?'相談内容をコピーしました':'コピーできませんでした。ブラウザの印刷機能をご利用ください。')}
-function flash(msg){$('live-status').textContent=msg;const b=$('copy-btn');b.textContent=msg;b.disabled=true;setTimeout(()=>{b.textContent='相談内容をコピー';b.disabled=false},2000)}
-$('back-btn').addEventListener('click',()=>{if(state.index>0){state.index--;renderQuestion()}});$('next-btn').addEventListener('click',()=>{if(state.answers[state.index]===null)return;if(state.index<4){state.index++;renderQuestion();$('quiz').scrollIntoView({behavior:'smooth',block:'start'})}else renderResult()});$('restart-btn').addEventListener('click',restart);$('copy-btn').addEventListener('click',copySummary);$('print-btn').addEventListener('click',()=>window.print());renderQuestion();
-})();
+let posts = JSON.parse(localStorage.getItem('sns_mgr_v2') || '[]');
+let selP = [];
+let editId = null;
+let cY = new Date().getFullYear();
+let cM = new Date().getMonth();
+let selDate = null;
+let sf = 'all';
+let dpYear = new Date().getFullYear();
+let dpMonth = new Date().getMonth();
+let dpSelDate = null;
+let fromCalendar = false;   // カレンダーから来たか
+let returnToDate = null;    // 戻り先の日付
+
+const save = () => localStorage.setItem('sns_mgr_v2', JSON.stringify(posts));
+const WD = ['日','月','火','水','木','金','土'];
+const todayStr = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+};
+const pad = n => String(n).padStart(2,'0');
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const fmtDt = d => {
+  if (!d) return '未設定';
+  const dt = new Date(d);
+  return `${dt.getMonth()+1}/${dt.getDate()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+};
+
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.className = 'toast'; t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2400);
+}
+
+// ヘッダー日付
+function initDate() {
+  const d = new Date();
+  document.getElementById('hDate').textContent = `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日（${WD[d.getDay()]}）`;
+}
+
+// タブ切替
+function gotoTab(name, el) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('view-'+name).classList.add('active');
+  el.classList.add('active');
+  if (name === 'today') renderToday();
+  if (name === 'calendar') renderCalendar();
+  if (name === 'stock') renderStock();
+  if (name === 'task') renderKanban();
+  if (name === 'skill') renderSkills();
+  if (name === 'sub')   renderSubs();
+}
+
+// ── 今日の投稿 ──
+function renderToday() {
+  const ts = todayStr();
+  const d = new Date();
+  document.getElementById('todayLabel').textContent = `${d.getMonth()+1}月${d.getDate()}日（${WD[d.getDay()]}）`;
+
+  const todayPosts = posts.filter(p => p.date && p.date.startsWith(ts) && p.status !== 'posted');
+  const donePosts  = posts.filter(p => p.date && p.date.startsWith(ts) && p.status === 'posted');
+  document.getElementById('todayNum').innerHTML = `${todayPosts.length}<span>件</span>`;
+
+  const container = document.getElementById('todayList');
+  if (todayPosts.length + donePosts.length === 0) {
+    container.innerHTML = `<div class="empty-state">
+      <div class="ico">😴</div>
+      <p>今日の投稿予定はありません。<br><br>
+      <span class="empty-link" onclick="gotoTabByName('create')">「ネタ作成」</span>で
+      今日の日時をセットして<br>投稿内容を登録しておきましょう！</p>
+    </div>`;
+    return;
+  }
+
+  const all = [...todayPosts, ...donePosts].sort((a,b) => (a.date||'').localeCompare(b.date||''));
+  container.innerHTML = all.map(p => {
+    const badges = p.platforms.map(pl => `<span class="pbadge pbadge-${pl}">${pl==='X'?'𝕏 X':pl}</span>`).join('');
+    const timeStr = p.date ? p.date.slice(11,16) : '';
+    const done = p.status === 'posted';
+    return `<div class="today-card ${done?'is-done':''}" id="tc-${p.id}">
+      <div class="card-top">
+        ${badges}
+        ${timeStr ? `<span class="post-time">🕐 ${timeStr}</span>` : ''}
+        ${done ? '<span class="done-pill">✅ 投稿済み</span>' : ''}
+      </div>
+      <div class="text-box" id="tb-${p.id}" onclick="flashCopy('${p.id}', this)">${esc(p.text)}</div>
+      ${srcHtml(p)}
+      ${p.memo ? `<div class="memo-line">💬 ${esc(p.memo)}</div>` : ''}
+      <div class="card-actions">
+        <button class="abtn primary" onclick="copyBtn('${p.id}', this)">📋 文章コピー</button>
+        ${!done ? `<button class="abtn" onclick="markPosted('${p.id}')">✅ 投稿済みに</button>` : ''}
+        <button class="abtn" onclick="editPost('${p.id}')">✏️ 編集</button>
+        <button class="abtn" onclick="duplicatePost('${p.id}')">📄 複製して編集</button>
+        <button class="abtn danger" onclick="delPost('${p.id}')">🗑️</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function gotoTabByName(name) {
+  const tabs = document.querySelectorAll('.tab');
+  const names = ['today','calendar','create','stock'];
+  const idx = names.indexOf(name);
+  if (idx > -1) gotoTab(name, tabs[idx]);
+}
+
+async function doCopy(id) {
+  const p = posts.find(x => x.id === id);
+  if (!p) return false;
+  try { await navigator.clipboard.writeText(p.text); return true; }
+  catch { showToast('手動でコピーしてください'); return false; }
+}
+
+async function flashCopy(id, el) {
+  el.classList.add('flash');
+  setTimeout(() => el.classList.remove('flash'), 800);
+  const ok = await doCopy(id);
+  if (ok) showToast('📋 コピーしました！貼り付けて投稿してください');
+}
+
+async function copyBtn(id, btn) {
+  const ok = await doCopy(id);
+  if (ok) {
+    btn.textContent = '✅ コピー完了！';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋 文章コピー'; btn.classList.remove('copied'); }, 2500);
+  }
+}
+
+function markPosted(id) {
+  const p = posts.find(x => x.id === id);
+  if (p) { p.status = 'posted'; p.updatedAt = Date.now(); }
+  save(); renderToday(); renderStock();
+  showToast('✅ 投稿済みにしました！');
+}
+
+function delPost(id) {
+  if (!confirm('この投稿を削除しますか？')) return;
+  posts = posts.filter(x => x.id !== id);
+  save(); renderToday(); renderStock(); renderCalendar();
+  showToast('🗑️ 削除しました');
+}
+
+// カレンダーから編集（保存後カレンダーに戻る）
+function editPostFromCal(id, ds) {
+  fromCalendar = true;
+  returnToDate = ds;
+  editPost(id);
+}
+
+function editPost(id) {
+  const p = posts.find(x => x.id === id);
+  if (!p) return;
+  editId = id;
+  selP = [...p.platforms];
+  document.getElementById('fText').value = p.text;
+  document.getElementById('fDate').value = p.date || '';
+  document.getElementById('fMemo').value = p.memo || '';
+  document.getElementById('fStatus').value = p.status;
+  document.getElementById('fSourceTitle').value = p.sourceTitle || '';
+  document.getElementById('fSourceUrl').value = p.sourceUrl || '';
+  updatePbtns(); updateCC(); updateSourceBox();
+  setDatePickerValue(p.date || '');
+  document.getElementById('editNotice').style.display = 'block';
+  gotoTabByName('create');
+  window.scrollTo(0,0);
+  document.getElementById('fText').focus();
+}
+
+// ── 日本の祝日データ（2025〜2026年） ──
+const JP_HOLIDAYS = {
+  '2025-01-01':'元日','2025-01-13':'成人の日','2025-02-11':'建国記念の日',
+  '2025-02-23':'天皇誕生日','2025-02-24':'天皇誕生日振替','2025-03-20':'春分の日',
+  '2025-04-29':'昭和の日','2025-05-03':'憲法記念日','2025-05-04':'みどりの日',
+  '2025-05-05':'こどもの日','2025-05-06':'こどもの日振替','2025-07-21':'海の日',
+  '2025-08-11':'山の日','2025-09-15':'敬老の日','2025-09-23':'秋分の日',
+  '2025-10-13':'スポーツの日','2025-11-03':'文化の日','2025-11-23':'勤労感謝の日',
+  '2025-11-24':'勤労感謝の日振替',
+  '2026-01-01':'元日','2026-01-12':'成人の日','2026-02-11':'建国記念の日',
+  '2026-02-23':'天皇誕生日','2026-03-20':'春分の日','2026-04-29':'昭和の日',
+  '2026-05-03':'憲法記念日','2026-05-04':'みどりの日','2026-05-05':'こどもの日',
+  '2026-05-06':'こどもの日振替','2026-07-20':'海の日','2026-08-11':'山の日',
+  '2026-09-21':'敬老の日','2026-09-22':'国民の休日','2026-09-23':'秋分の日',
+  '2026-10-12':'スポーツの日','2026-11-03':'文化の日','2026-11-23':'勤労感謝の日'
+};
+
+// ── カレンダー（月曜始まり） ──
+function renderCalendar() {
+  document.getElementById('calTitle').textContent = `${cY}年 ${cM+1}月`;
+  const today = new Date();
+  const tsToday = `${today.getFullYear()}-${pad(today.getMonth()+1)}-${pad(today.getDate())}`;
+
+  // 月曜始まり: 月=0, 火=1 ... 日=6
+  const rawFirst = new Date(cY, cM, 1).getDay(); // 0=日, 1=月 ...
+  const firstDay = (rawFirst + 6) % 7; // 月曜起算に変換
+  const dim = new Date(cY, cM+1, 0).getDate();
+  const diPrev = new Date(cY, cM, 0).getDate();
+  let total = firstDay + dim;
+  if (total % 7) total += 7 - (total % 7);
+
+  let html = '';
+  for (let i = 0; i < total; i++) {
+    let day, m, y, other = false;
+    if (i < firstDay) {
+      day = diPrev - firstDay + i + 1; m = cM - 1; y = cY; other = true;
+    } else if (i >= firstDay + dim) {
+      day = i - firstDay - dim + 1; m = cM + 1; y = cY; other = true;
+    } else {
+      day = i - firstDay + 1; m = cM; y = cY;
+    }
+
+    // 月をまたぐ処理
+    let rm = m, ry = y;
+    if (rm < 0) { rm = 11; ry = y - 1; }
+    if (rm > 11) { rm = 0; ry = y + 1; }
+
+    const ds = `${ry}-${pad(rm+1)}-${pad(day)}`;
+    const dow = new Date(ds).getDay(); // 0=日, 6=土
+    const isSat = dow === 6;
+    const isSun = dow === 0;
+    const holName = JP_HOLIDAYS[ds] || '';
+    const isHol = !!holName;
+    const isToday = ds === tsToday;
+    const isSel = ds === selDate;
+
+    const dp = posts.filter(p => p.date && p.date.startsWith(ds));
+    // note含む投稿を先頭に、それ以外は時間順
+    const sortedDp = [...dp].sort((a, b) => {
+      const aN = a.platforms.includes('note') ? 0 : 1;
+      const bN = b.platforms.includes('note') ? 0 : 1;
+      if (aN !== bN) return aN - bN;
+      return (a.date || '').localeCompare(b.date || '');
+    });
+    const PLT_ICON = { note:'📝', X:'𝕏', Threads:'T', Facebook:'F', BASE:'🛒', Instagram:'📸', YouTube:'▶️', Amazon:'🛒', Rakuten:'🛍️' };
+    let dotLines = [];
+    for (const p of sortedDp) {
+      for (const plt of p.platforms) {
+        if (dotLines.length >= 5) break;
+        const icon = PLT_ICON[plt] || plt.charAt(0);
+        const label = (p.sourceTitle || p.text).slice(0, 15);
+        const postedCls = p.status === 'posted' ? ' is-posted' : p.status === 'promo' ? ' is-promo' : '';
+        const timePart = p.date ? p.date.slice(11,16) : '';
+        dotLines.push(
+          `<div class="cal-dot plt-${plt}${postedCls}">${icon} ${timePart} ${label}</div>`
+        );
+      }
+      if (dotLines.length >= 5) break;
+    }
+    const dots = dotLines.join('');
+
+    const classes = [
+      other ? 'other-m' : '',
+      isToday ? 'is-today' : '',
+      isSel ? 'is-selected' : '',
+      isSat && !other ? 'is-sat' : '',
+      (isSun || isHol) && !other ? 'is-sun' : ''
+    ].filter(Boolean).join(' ');
+
+    const holTag = isHol && !other ? `<span class="hol-name">${holName}</span>` : '';
+
+    html += `<div class="cal-cell ${classes}" onclick="pickDate('${ds}')">
+      <div class="cal-day">${day}${holTag}</div>
+      ${dots}
+    </div>`;
+  }
+  document.getElementById('calGrid').innerHTML = html;
+  if (selDate) renderDayDetail(selDate);
+}
+
+// 週次スケジュール折りたたみ
+function toggleWeekly() {
+  const body   = document.getElementById('wsBody');
+  const toggle = document.getElementById('wsToggle');
+  const isOpen = body.style.display !== 'none';
+  body.style.display   = isOpen ? 'none' : 'block';
+  toggle.textContent   = isOpen ? '▼ 展開する' : '▲ 折りたたむ';
+}
+
+function chMonth(d) {
+  cM += d;
+  if (cM > 11) { cM = 0; cY++; }
+  if (cM < 0) { cM = 11; cY--; }
+  renderCalendar();
+}
+function goToday() {
+  const now = new Date();
+  cY = now.getFullYear();
+  cM = now.getMonth();
+  selDate = null;
+  renderCalendar();
+  document.getElementById('dayDetail').innerHTML =
+    '<div class="dd-placeholder">📅 日付をクリックするとその日の投稿が表示されます</div>';
+}
+
+function pickDate(ds) {
+  selDate = ds;
+  renderCalendar();
+  renderDayDetail(ds);
+}
+
+function renderDayDetail(ds) {
+  const [y, m, d] = ds.split('-');
+  const dow = new Date(ds).getDay();
+  const dowLabel = ['日','月','火','水','木','金','土'][dow];
+  const holName = JP_HOLIDAYS[ds] || '';
+  const holStr = holName ? ` 🎌${holName}` : '';
+  const label = `${parseInt(m)}月${parseInt(d)}日（${dowLabel}）${holStr}`;
+  const dp = posts.filter(p => p.date && p.date.startsWith(ds)).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+
+
+  const cards = dp.length === 0
+    ? `<div class="dd-empty">この日の投稿はありません</div>
+       <div style="text-align:center;margin-top:14px;">
+         <button class="dd-add-btn" onclick="addForDate('${ds}')">＋ この日に新規作成</button>
+       </div>`
+    : dp.map(p => {
+        const bs = p.platforms.map(pl => `<span class="pbadge pbadge-${pl}" style="font-size:10px;padding:2px 7px;">${pl==='X'?'𝕏':pl.slice(0,2)}</span>`).join('');
+        const tstr = p.date ? p.date.slice(11,16) : '';
+        return `<div class="dd-card">
+          <div class="dd-left">
+            <div style="display:flex;gap:3px;flex-wrap:wrap;">${bs}</div>
+            ${tstr ? `<div style="font-size:10px;color:var(--muted);font-family:'DM Mono',monospace;">${tstr}</div>` : ''}
+            <div class="spill spill-${p.status}" style="font-size:10px;padding:2px 7px;margin-top:2px;">${p.status==='draft'?'下書き':p.status==='scheduled'?'予定':'済み'}</div>
+          </div>
+          <div class="dd-text">${esc(p.text)}</div>
+          ${p.sourceTitle||p.sourceUrl ? `<div style="font-size:11px;color:var(--muted);margin-top:4px;padding:5px 8px;background:#f4f9f4;border-radius:5px;border-left:3px solid ${p.platforms.includes('BASE')?'#e8380d':'#3dc06c'}">${p.platforms.includes('BASE')?'🛒':'📝'} ${esc(p.sourceTitle||'')}${p.sourceUrl?`<br><a href="${esc(p.sourceUrl)}" target="_blank" style="color:var(--cyan);font-size:10px;">${esc(p.sourceUrl)}</a>`:''}</div>` : ''}
+          <div class="dd-actions">
+            <button class="smbtn" onclick="ddCopy('${p.id}',this)">📋 文章コピー</button>
+            <button class="smbtn" onclick="editPostFromCal('${p.id}','${ds}')">✏️ 編集</button>
+            ${p.status!=='posted'?`<button class="smbtn" onclick="markPosted('${p.id}')">✅ 投稿済みに</button>`:''}
+            <button class="smbtn" onclick="duplicatePost('${p.id}')">📄 複製して編集</button>
+            <button class="smbtn danger" onclick="delPost('${p.id}')">🗑️</button>
+          </div>
+        </div>`;
+      }).join('');
+
+  document.getElementById('dayDetail').innerHTML = `<div class="dd-title">
+    ${label}の投稿（${dp.length}件）
+    <button class="dd-add-btn" onclick="addForDate('${ds}')">＋ この日に新規作成</button>
+  </div><div class="dd-cards-wrap">${cards}</div>`;
+}
+
+async function ddCopy(id, btn) {
+  await doCopy(id);
+  btn.textContent = '✅ コピー済み';
+  setTimeout(() => btn.textContent = '📋 文章コピー', 2200);
+}
+
+function addForDate(ds) {
+  fromCalendar = true;
+  returnToDate = ds;
+  document.getElementById('fDate').value = ds + 'T09:00';
+  setDatePickerValue(ds + 'T09:00');
+  gotoTabByName('create');
+}
+
+// ── フォーム ──
+function toggleP(p) {
+  const i = selP.indexOf(p);
+  if (i > -1) selP.splice(i, 1); else selP.push(p);
+  updatePbtns();
+  updateSourceBox();
+}
+function updatePbtns() {
+  document.querySelectorAll('.pbtn').forEach(b => {
+    const p = b.dataset.p;
+    b.className = 'pbtn' + (selP.includes(p) ? ` on-${p}` : '');
+  });
+}
+function updateSourceBox() {
+  const box = document.getElementById('sourceBox');
+  const lbl = document.getElementById('sourceBoxLabel');
+  const hasNote = selP.includes('note');
+  const hasBase = selP.includes('BASE');
+  const hasInsta = selP.includes('Instagram');
+  const hasYT = selP.includes('YouTube');
+  const hasAmz = selP.includes('Amazon');
+  const hasRaku = selP.includes('Rakuten');
+  if (hasNote || hasBase || hasInsta || hasYT || hasAmz || hasRaku) {
+    box.classList.add('show');
+    const labels = [];
+    if (hasNote) labels.push('📝 note');
+    if (hasBase) labels.push('🛒 BASE');
+    if (hasInsta) labels.push('📸 Instagram');
+    if (hasYT) labels.push('▶️ YouTube');
+    if (hasAmz) labels.push('🛒 Amazon');
+    if (hasRaku) labels.push('🛍️ 楽天');
+    lbl.textContent = labels.join(' / ') + ' 掲載情報';
+    box.style.borderColor = hasBase ? 'rgba(232,56,13,0.35)' : 'rgba(0,184,169,0.35)';
+  } else {
+    box.classList.remove('show');
+  }
+}
+function updateCC() {
+  const len = document.getElementById('fText').value.length;
+  const el = document.getElementById('charCC');
+  el.textContent = `${len} 文字`;
+  el.className = 'char-cc' + (len > 200 ? ' warn' : '') + (len > 280 ? ' over' : '');
+}
+function savePost() {
+  const text = document.getElementById('fText').value.trim();
+  if (selP.length === 0) { showToast('投稿先を選んでください'); return; }
+  // note/BASEのみの場合はtextが空でも許可（タイトルがあればOK）
+  const srcTitle = document.getElementById('fSourceTitle').value.trim();
+  const srcUrl = document.getElementById('fSourceUrl').value.trim();
+  const snsOnly = selP.every(p => ['X','Threads','Facebook'].includes(p));
+  if (snsOnly && !text) { showToast('投稿テキストを入力してください'); return; }
+  if (!text && !srcTitle) { showToast('投稿テキストかタイトルを入力してください'); return; }
+
+  const post = {
+    id: editId || Date.now().toString(),
+    text, platforms: [...selP],
+    sourceTitle: srcTitle,
+    sourceUrl: srcUrl,
+    date: document.getElementById('fDate').value,
+    memo: document.getElementById('fMemo').value.trim(),
+    status: document.getElementById('fStatus').value,
+    createdAt: editId ? (posts.find(p=>p.id===editId)?.createdAt || Date.now()) : Date.now(),
+    updatedAt: Date.now()
+  };
+  if (editId) { const i = posts.findIndex(p=>p.id===editId); if(i>-1) posts[i]=post; }
+  else posts.unshift(post);
+
+  // フラグを先に保存（clearFormでリセットされる前に）
+  const calFlag = fromCalendar;
+  const calDate = returnToDate;
+  const wasEdit = !!editId;
+
+  save(); clearForm();
+  showToast(wasEdit ? '✅ 更新しました！' : '💾 保存しました！');
+
+  // カレンダーから来た場合はカレンダーのその日に戻る
+  if (calFlag && calDate) {
+    const dt = new Date(calDate);
+    cY = dt.getFullYear();
+    cM = dt.getMonth();
+    selDate = calDate;
+    gotoTabByName('calendar');
+    renderCalendar();
+    renderDayDetail(calDate);
+  }
+}
+function clearForm() {
+  document.getElementById('fText').value = '';
+  document.getElementById('fDate').value = '';
+  dpSelDate = null;
+  document.getElementById('datePickerLabel').textContent = '📅 日付・時間を選択';
+  document.getElementById('fMemo').value = '';
+  document.getElementById('fStatus').value = 'draft';
+  document.getElementById('fSourceTitle').value = '';
+  document.getElementById('fSourceUrl').value = '';
+  selP = []; updatePbtns(); updateCC(); updateSourceBox();
+  editId = null;
+  fromCalendar = false;
+  returnToDate = null;
+  document.getElementById('editNotice').style.display = 'none';
+}
+
+// 元ネタ表示HTML生成
+function srcHtml(p) {
+  if (!p.sourceTitle && !p.sourceUrl) return '';
+  const isBase = p.platforms.includes('BASE');
+  const cls = isBase ? 'card-source base-src' : 'card-source';
+  const icon = isBase ? '🛒' : '📝';
+  const url = p.sourceUrl
+    ? `<br><a href="${esc(p.sourceUrl)}" target="_blank">${esc(p.sourceUrl)}</a>`
+    : '';
+  return `<div class="${cls}">${icon} ${esc(p.sourceTitle||'')}${url}</div>`;
+}
+
+// 複製：フォームに内容をセットするだけ（保存はしない）
+function duplicatePost(id) {
+  const orig = posts.find(x => x.id === id);
+  if (!orig) return;
+
+  editId = null;
+  // 複製元に日付がある場合は保存後にその日のカレンダーに戻る
+  if (orig.date) {
+    fromCalendar = true;
+    returnToDate = orig.date.slice(0, 10);
+  } else {
+    fromCalendar = false;
+    returnToDate = null;
+  }
+
+  selP = [...orig.platforms];
+  document.getElementById('fText').value = orig.text;
+  document.getElementById('fMemo').value = orig.memo || '';
+  document.getElementById('fStatus').value = 'draft';
+  document.getElementById('fSourceTitle').value = orig.sourceTitle || '';
+  document.getElementById('fSourceUrl').value = orig.sourceUrl || '';
+  document.getElementById('editNotice').style.display = 'none';
+
+  // 元の日付・時間をそのままコピー（時間だけ変えて使い回しできる）
+  if (orig.date) {
+    document.getElementById('fDate').value = orig.date;
+    setDatePickerValue(orig.date);
+  } else {
+    dpSelDate = null;
+    document.getElementById('fDate').value = '';
+    document.getElementById('datePickerLabel').textContent = '📅 日付・時間を選択';
+    const dpDateLbl = document.getElementById('dpDateLabel');
+    if (dpDateLbl) dpDateLbl.textContent = '📅 日付未設定';
+  }
+
+  updatePbtns(); updateCC(); updateSourceBox();
+  gotoTabByName('create');
+  showToast('📄 複製しました。変更して保存してください');
+}
+function setSF(f, btn) {
+  sf = f;
+  document.querySelectorAll('.sfbtn').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  renderStock();
+}
+function renderStock() {
+  const q = (document.getElementById('stockSearch')?.value || '').toLowerCase();
+  const fl = posts.filter(p => {
+    const mf = sf === 'all' || p.status === sf;
+    const ms = !q || p.text.toLowerCase().includes(q) || (p.memo||'').toLowerCase().includes(q);
+    return mf && ms;
+  }).sort((a,b) => {
+    if (a.date && b.date) return a.date.localeCompare(b.date);
+    if (a.date) return -1; if (b.date) return 1;
+    return b.createdAt - a.createdAt;
+  });
+
+  const c = document.getElementById('stockList');
+  if (fl.length === 0) {
+    c.innerHTML = `<div class="empty-state"><div class="ico">📭</div><p>投稿がありません</p></div>`;
+    return;
+  }
+  const stMap = {
+    draft:     ['spill-draft',     '📝 下書き'],
+    scheduled: ['spill-scheduled', '📅 予定'],
+    promo:     ['spill-promo',     '📣 集客投稿'],
+    affiliate: ['spill-affiliate',  '💰 アフィリ'],
+    posted:    ['spill-posted',    '✅ 済み']
+  };
+  c.innerHTML = fl.map(p => {
+    const bs = p.platforms.map(pl => `<span class="pbadge pbadge-${pl}" style="font-size:10px;">${pl==='X'?'𝕏':pl.slice(0,2)}</span>`).join('');
+    const [sc,sl] = stMap[p.status]||stMap.draft;
+    return `<div class="stock-card">
+      <div class="sc-top">
+        ${bs}
+        <span class="spill ${sc}">${sl}</span>
+        <span class="sc-date">🕐 ${fmtDt(p.date)}</span>
+      </div>
+      <div class="sc-text">${esc(p.text)}</div>
+      ${srcHtml(p)}
+      ${p.memo ? `<div class="sc-memo">💬 ${esc(p.memo)}</div>` : ''}
+      <div class="sc-actions">
+        <button class="scbtn" onclick="scCopy('${p.id}',this)">📋 文章コピー</button>
+        <button class="scbtn" onclick="editPost('${p.id}')">✏️ 編集</button>
+        ${p.status!=='posted'?`<button class="scbtn" onclick="markPosted('${p.id}')">✅ 投稿済み</button>`:''}
+        <button class="scbtn" onclick="duplicatePost('${p.id}')">📄 複製して編集</button>
+        <button class="scbtn danger" onclick="delPost('${p.id}')">🗑️</button>
+        <span class="sc-chars">${p.text.length}文字</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+async function scCopy(id, btn) {
+  await doCopy(id);
+  btn.textContent = '✅ コピー済み';
+  btn.classList.add('copied');
+  setTimeout(() => { btn.textContent = '📋 文章コピー'; btn.classList.remove('copied'); }, 2500);
+}
+
+// ── タスク管理 ──
+let tasks = JSON.parse(localStorage.getItem('sns_tasks_v1') || '[]');
+function calcProfit() {
+  const s = parseInt(document.getElementById('tmSales').value) || 0;
+  const c = parseInt(document.getElementById('tmCost').value)  || 0;
+  const p = s - c;
+  const el = document.getElementById('tmProfit');
+  el.textContent = p.toLocaleString() + ' 円';
+  el.style.color = p >= 0 ? 'var(--cyan)' : '#ef4444';
+}
+
+const saveTasks = () => {
+  localStorage.setItem('sns_tasks_v1', JSON.stringify(tasks));
+  localStorage.setItem('sns_task_cats', JSON.stringify(taskCats));
+};
+let taskCats = JSON.parse(localStorage.getItem('sns_task_cats') || '["Web制作","アプリ開発","note記事テーマ","その他"]');
+let activeCat = 'all';
+let editTaskId = null;
+
+// ── タスク列移動 ──
+const TC_STATUSES = ['priority','urgent','todo','doing','review','done','repeat','annual'];
+
+function tcMove(id, dir) {
+  const task = tasks.find(t => t.id === id);
+  if (!task) return;
+  const idx = TC_STATUSES.indexOf(task.status);
+  const next = idx + dir;
+  if (next < 0 || next >= TC_STATUSES.length) return;
+  task.status = TC_STATUSES[next];
+  task.updatedAt = Date.now();
+  saveTasks();
+  renderKanban();
+  showToast('✅ 移動しました');
+}
+
+function renderKanban() {
+  // カテゴリフィルターボタン
+  const cr = document.getElementById('taskCatRow');
+  cr.innerHTML = [`<button class="task-cat-btn ${activeCat==='all'?'on':''}" onclick="setCat('all',this)">すべて</button>`]
+    .concat(taskCats.map(c =>
+      `<button class="task-cat-btn ${activeCat===c?'on':''}" onclick="setCat('${esc(c)}',this)">${esc(c)}</button>`
+    )).join('');
+
+  // フィルター
+  const filtered = activeCat === 'all' ? tasks : tasks.filter(t => t.category === activeCat);
+
+  const statuses = ['priority', 'urgent', 'todo', 'doing', 'review', 'done', 'repeat', 'annual'];
+  statuses.forEach(st => {
+    const si    = statuses.indexOf(st);
+    const cards = filtered.filter(t => t.status === st);
+    document.getElementById('cnt-' + st).textContent = cards.length;
+    const colEl = document.getElementById('col-' + st);
+    colEl.innerHTML = '';
+
+    // 集計バー（売上・原価・利益がある場合のみ表示）
+    const totalSales  = cards.reduce((s, t) => s + (t.sales || 0), 0);
+    const totalCost   = cards.reduce((s, t) => s + (t.cost  || 0), 0);
+    const totalProfit = totalSales - totalCost;
+    if (totalSales > 0 || totalCost > 0) {
+      const summary = document.createElement('div');
+      summary.className = 'kanban-summary';
+      summary.innerHTML =
+        `<span class="ks-item">売上: <b>${totalSales.toLocaleString()}円</b></span>` +
+        `<span class="ks-item">原価: <b>${totalCost.toLocaleString()}円</b></span>` +
+        `<span class="ks-profit">利益: <b class="${totalProfit < 0 ? 'minus' : ''}">${totalProfit.toLocaleString()}円</b></span>`;
+      colEl.appendChild(summary);
+    }
+
+    if (cards.length === 0) {
+      const empty = document.createElement('div');
+      empty.style.cssText = 'text-align:center;padding:20px;color:var(--muted);font-size:12px;';
+      empty.textContent = 'タスクがありません';
+      colEl.appendChild(empty);
+      return;
+    }
+
+    cards.forEach(t => {
+      const card = document.createElement('div');
+      card.className = 'task-card';
+      card.id = 'tc-' + t.id;
+
+      if (t.category) {
+        const cat = document.createElement('div');
+        cat.className = 'task-card-cat';
+        cat.textContent = t.category;
+        card.appendChild(cat);
+      }
+
+      const title = document.createElement('div');
+      title.className = 'task-card-title';
+      title.textContent = t.title;
+      card.appendChild(title);
+
+      // 金額表示
+      if (t.sales || t.cost) {
+        const profit = (t.sales || 0) - (t.cost || 0);
+        const fin = document.createElement('div');
+        fin.style.cssText = 'font-size:11px;color:var(--muted);margin-top:5px;line-height:1.7;';
+        fin.innerHTML =
+          (t.sales ? `売上: <b>${(t.sales||0).toLocaleString()}円</b>　` : '') +
+          (t.cost  ? `原価: <b>${(t.cost||0).toLocaleString()}円</b>　` : '') +
+          `利益: <b style="color:${profit>=0?'var(--cyan)':'#ef4444'}">${profit.toLocaleString()}円</b>`;
+        card.appendChild(fin);
+      }
+
+      if (t.memo) {
+        const memo = document.createElement('div');
+        memo.className = 'task-card-memo';
+        memo.textContent = t.memo;
+        card.appendChild(memo);
+      }
+
+      // 移動ボタン行
+      const moveRow = document.createElement('div');
+      moveRow.className = 'task-card-move';
+
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'tc-mv-btn';
+      prevBtn.textContent = '◀ 戻す';
+      prevBtn.disabled = si <= 0;
+      prevBtn.addEventListener('click', e => { e.stopPropagation(); tcMove(t.id, -1); });
+
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'tc-mv-btn';
+      nextBtn.textContent = '進める ▶';
+      nextBtn.disabled = si >= statuses.length - 1;
+      nextBtn.addEventListener('click', e => { e.stopPropagation(); tcMove(t.id, 1); });
+
+      moveRow.appendChild(prevBtn);
+      moveRow.appendChild(nextBtn);
+      card.appendChild(moveRow);
+
+      // カード本体クリック → 編集モーダル
+      card.addEventListener('click', e => {
+        if (!e.target.closest('.tc-mv-btn')) openTaskModal(t.id);
+      });
+
+      colEl.appendChild(card);
+    });
+  });
+}
+
+function setCat(cat, btn) {
+  activeCat = cat;
+  renderKanban();
+}
+
+function openTaskModal(id, defaultStatus) {
+  editTaskId = id;
+  const modal = document.getElementById('taskModal');
+  const t = id ? tasks.find(x => x.id === id) : null;
+
+  // カテゴリselect更新
+  const catSel = document.getElementById('tmCat');
+  catSel.innerHTML = taskCats.map(c =>
+    `<option value="${esc(c)}" ${t&&t.category===c?'selected':''}>${esc(c)}</option>`
+  ).join('');
+
+  document.getElementById('taskModalTitle').textContent = t ? 'タスク編集' : 'タスク追加';
+  document.getElementById('tmTitle').value = t ? t.title : '';
+  document.getElementById('tmStatus').value = t ? t.status : (defaultStatus || 'todo');
+  document.getElementById('tmSales').value = t ? (t.sales || '') : '';
+  document.getElementById('tmCost').value  = t ? (t.cost  || '') : '';
+  document.getElementById('tmMemo').value = t ? (t.memo || '') : '';
+  document.getElementById('tmDeleteBtn').style.display = t ? 'block' : 'none';
+  calcProfit();
+
+  modal.style.display = 'flex';
+  document.getElementById('tmTitle').focus();
+}
+
+function closeTaskModal() {
+  document.getElementById('taskModal').style.display = 'none';
+  editTaskId = null;
+}
+
+function closeTaskModalOutside(e) {
+  if (e.target.id === 'taskModal') closeTaskModal();
+}
+
+function saveTask() {
+  const title = document.getElementById('tmTitle').value.trim();
+  if (!title) { showToast('タイトルを入力してください'); return; }
+
+  const task = {
+    id: editTaskId || Date.now().toString(),
+    title,
+    category: document.getElementById('tmCat').value,
+    status: document.getElementById('tmStatus').value,
+    sales: parseInt(document.getElementById('tmSales').value) || 0,
+    cost:  parseInt(document.getElementById('tmCost').value)  || 0,
+    memo: document.getElementById('tmMemo').value.trim(),
+    createdAt: editTaskId ? (tasks.find(t=>t.id===editTaskId)?.createdAt || Date.now()) : Date.now(),
+    updatedAt: Date.now()
+  };
+
+  if (editTaskId) {
+    const i = tasks.findIndex(t => t.id === editTaskId);
+    if (i > -1) tasks[i] = task;
+  } else {
+    tasks.unshift(task);
+  }
+
+  saveTasks();
+  closeTaskModal();
+  renderKanban();
+  showToast(editTaskId ? '✅ 更新しました' : '💾 タスクを追加しました');
+}
+
+function deleteTask() {
+  if (!editTaskId) return;
+  if (!confirm('このタスクを削除しますか？')) return;
+  tasks = tasks.filter(t => t.id !== editTaskId);
+  saveTasks();
+  closeTaskModal();
+  renderKanban();
+  showToast('🗑️ 削除しました');
+}
+
+// カテゴリ管理
+function openAddCatModal() {
+  renderCatList();
+  document.getElementById('catModal').style.display = 'flex';
+  document.getElementById('newCatInput').value = '';
+}
+
+function closeCatModal() {
+  document.getElementById('catModal').style.display = 'none';
+  renderKanban();
+}
+
+function closeCatModalOutside(e) {
+  if (e.target.id === 'catModal') closeCatModal();
+}
+
+function renderCatList() {
+  document.getElementById('catList').innerHTML = taskCats.map((c, i) =>
+    `<div class="cat-item">
+      <span>${esc(c)}</span>
+      <button class="cat-item-del" onclick="deleteCat(${i})">削除</button>
+    </div>`
+  ).join('');
+}
+
+function addCategory() {
+  const val = document.getElementById('newCatInput').value.trim();
+  if (!val) { showToast('カテゴリ名を入力してください'); return; }
+  if (taskCats.includes(val)) { showToast('同じカテゴリが既にあります'); return; }
+  taskCats.push(val);
+  saveTasks();
+  document.getElementById('newCatInput').value = '';
+  renderCatList();
+  showToast(`✅ 「${val}」を追加しました`);
+}
+
+function deleteCat(idx) {
+  const name = taskCats[idx];
+  if (!confirm(`「${name}」を削除しますか？\nこのカテゴリのタスクはカテゴリなしになります。`)) return;
+  tasks.forEach(t => { if (t.category === name) t.category = ''; });
+  taskCats.splice(idx, 1);
+  saveTasks();
+  renderCatList();
+}
+
+// ── サブスク管理 ──
+let subs    = JSON.parse(localStorage.getItem('sns_subs_v1') || '[]');
+let subYear = new Date().getFullYear();
+let editSubId = null;
+const saveSubs = () => localStorage.setItem('sns_subs_v1', JSON.stringify(subs));
+const MONTHS   = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+
+function subChangeYear(d) { subYear += d; renderSubs(); }
+
+function renderSubs() {
+  document.getElementById('subYearLabel').textContent = subYear + '年';
+
+  // 月別コスト計算
+  const monthlyCosts = Array(12).fill(0); // 0-11
+  subs.forEach(s => {
+    if (s.type === 'monthly') {
+      for (let m = 0; m < 12; m++) monthlyCosts[m] += (s.amount || 0);
+    } else {
+      const m = (s.month || 1) - 1;
+      monthlyCosts[m] += (s.amount || 0);
+    }
+  });
+  const yearTotal = monthlyCosts.reduce((a, b) => a + b, 0);
+  const monthAvg  = subs.length ? Math.round(
+    subs.filter(s => s.type === 'monthly').reduce((a, s) => a + (s.amount||0), 0)
+  ) : 0;
+
+  // サマリーカード
+  document.getElementById('subSummary').innerHTML = [
+    { label:'年間合計', value: yearTotal.toLocaleString(), unit:'円' },
+    { label:'月額合計', value: monthAvg.toLocaleString(), unit:'円/月' },
+    { label:'サービス数', value: subs.length, unit:'件' },
+  ].map(c => `<div class="sub-summary-card">
+    <div class="sub-summary-label">${c.label}</div>
+    <div class="sub-summary-value">${c.value}<span class="sub-summary-unit"> ${c.unit}</span></div>
+  </div>`).join('');
+
+  // カテゴリ別集計
+  const catEl = document.getElementById('subCatSummary');
+  const catMap = {};
+  subs.forEach(s => {
+    const cat = s.category || 'その他';
+    const amount = s.type === 'monthly' ? (s.amount || 0) * 12 : (s.amount || 0);
+    catMap[cat] = (catMap[cat] || 0) + amount;
+  });
+  const catEntries = Object.entries(catMap).sort((a,b) => b[1]-a[1]);
+  if (catEntries.length > 0) {
+    catEl.style.display = 'block';
+    catEl.innerHTML = `<div class="sub-cat-summary">
+      <div class="sub-cat-title">📊 カテゴリ別年間合計</div>
+      ${catEntries.map(([cat, amt]) => {
+        const pct = yearTotal > 0 ? Math.round(amt / yearTotal * 100) : 0;
+        return `<div class="sub-cat-item">
+          <span class="sub-cat-name">${esc(cat)}</span>
+          <span class="sub-cat-amount">${amt.toLocaleString()}円</span>
+          <span class="sub-cat-pct">${pct}%</span>
+        </div>`;
+      }).join('')}
+    </div>`;
+  } else {
+    catEl.style.display = 'none';
+  }
+
+  // テーブル生成
+  const table = document.getElementById('subTable');
+  if (subs.length === 0) {
+    table.innerHTML = `<tr><td colspan="15" style="text-align:center;padding:40px;color:var(--muted);">サブスクが登録されていません。「＋ サブスク追加」から登録してください。</td></tr>`;
+    return;
+  }
+
+  // ヘッダー行
+  let thead = '<thead><tr>';
+  thead += '<th class="sub-th-name">サービス名</th>';
+  MONTHS.forEach(m => thead += `<th>${m}</th>`);
+  thead += '<th class="sub-annual-total">年額合計</th>';
+  thead += '</tr></thead>';
+
+  // データ行
+  let tbody = '<tbody>';
+  subs.forEach(s => {
+    tbody += `<tr>`;
+    tbody += `<td class="sub-td-name" onclick="openSubModal('${s.id}')">${esc(s.name)}${s.category?`<span class="sub-cat-badge">${esc(s.category)}</span>`:''}</td>`;
+    let rowTotal = 0;
+    for (let m = 0; m < 12; m++) {
+      if (s.type === 'monthly') {
+        const v = s.amount || 0;
+        rowTotal += v;
+        tbody += `<td>${v.toLocaleString()}</td>`;
+      } else {
+        if ((s.month || 1) - 1 === m) {
+          const v = s.amount || 0;
+          rowTotal += v;
+          tbody += `<td class="sub-td-annual">${v.toLocaleString()}</td>`;
+        } else {
+          tbody += `<td class="sub-td-zero">-</td>`;
+        }
+      }
+    }
+    tbody += `<td class="sub-annual-total">${rowTotal.toLocaleString()}</td>`;
+    tbody += '</tr>';
+  });
+
+  // 月合計行
+  tbody += '<tr class="sub-total-row">';
+  tbody += '<td class="sub-td-name">月 合 計</td>';
+  let grandTotal = 0;
+  monthlyCosts.forEach(c => {
+    grandTotal += c;
+    tbody += `<td>${c.toLocaleString()}</td>`;
+  });
+  tbody += `<td class="sub-annual-total">${grandTotal.toLocaleString()}</td>`;
+  tbody += '</tr></tbody>';
+
+  table.innerHTML = thead + tbody;
+}
+
+function toggleSubMonth() {
+  const type = document.getElementById('smSubType').value;
+  document.getElementById('smSubMonthWrap').style.display = type === 'annual' ? 'block' : 'none';
+}
+
+function openSubModal(id) {
+  editSubId = id;
+  const s = id ? subs.find(x => x.id === id) : null;
+  document.getElementById('subModalTitle').textContent = s ? 'サブスク編集' : 'サブスク追加';
+  document.getElementById('smSubName').value   = s ? s.name : '';
+  document.getElementById('smSubType').value   = s ? (s.type || 'monthly') : 'monthly';
+  document.getElementById('smSubAmount').value = s ? (s.amount || '') : '';
+  document.getElementById('smSubMonth').value  = s ? (s.month || 1) : 1;
+  document.getElementById('smSubCat').value    = s ? (s.category || '') : '';
+  document.getElementById('smSubNote').value   = s ? (s.note || '') : '';
+  document.getElementById('smSubDel').style.display = s ? 'block' : 'none';
+  toggleSubMonth();
+  document.getElementById('subModal').style.display = 'flex';
+  document.getElementById('smSubName').focus();
+}
+function closeSubModal() { document.getElementById('subModal').style.display = 'none'; editSubId = null; }
+function closeSubModalOutside(e) { if (e.target.id === 'subModal') closeSubModal(); }
+
+function saveSub() {
+  const name = document.getElementById('smSubName').value.trim();
+  if (!name) { showToast('サービス名を入力してください'); return; }
+  const sub = {
+    id:       editSubId || Date.now().toString(),
+    name,
+    type:     document.getElementById('smSubType').value,
+    amount:   parseInt(document.getElementById('smSubAmount').value) || 0,
+    month:    parseInt(document.getElementById('smSubMonth').value) || 1,
+    category: document.getElementById('smSubCat').value.trim(),
+    note:     document.getElementById('smSubNote').value.trim(),
+  };
+  if (editSubId) { const i = subs.findIndex(s => s.id === editSubId); if (i > -1) subs[i] = sub; }
+  else subs.push(sub);
+  saveSubs(); closeSubModal(); renderSubs();
+  showToast(editSubId ? '✅ 更新しました' : '💾 追加しました');
+}
+
+function deleteSub() {
+  if (!editSubId || !confirm('このサブスクを削除しますか？')) return;
+  subs = subs.filter(s => s.id !== editSubId);
+  saveSubs(); closeSubModal(); renderSubs();
+  showToast('🗑️ 削除しました');
+}
+
+// ── スキルアップ ──
+let skills = JSON.parse(localStorage.getItem('sns_skills_v1') || '[]');
+let skillCats = JSON.parse(localStorage.getItem('sns_skill_cats') || '["AI活用","Web制作","SNS運用","マーケティング","その他"]');
+let activeSkillCat = 'all';
+let activeSkillLv = 'all';
+let editSkillId = null;
+
+const saveSkills = () => {
+  localStorage.setItem('sns_skills_v1', JSON.stringify(skills));
+  localStorage.setItem('sns_skill_cats', JSON.stringify(skillCats));
+};
+
+function renderSkills() {
+  // カテゴリフィルター
+  const cr = document.getElementById('skillCatRow');
+  cr.innerHTML = [`<button class="task-cat-btn ${activeSkillCat==='all'?'on':''}" onclick="setSkillFilter('cat','all',this)">すべて</button>`]
+    .concat(skillCats.map(c =>
+      `<button class="task-cat-btn ${activeSkillCat===c?'on':''}" onclick="setSkillFilter('cat','${esc(c)}',this)">${esc(c)}</button>`
+    )).join('');
+
+  const q = (document.getElementById('skillSearch')?.value || '').toLowerCase();
+  const filtered = skills.filter(s => {
+    const mc = activeSkillCat === 'all' || s.category === activeSkillCat;
+    const ml = activeSkillLv === 'all' || String(s.level) === activeSkillLv;
+    const mq = !q || s.title.toLowerCase().includes(q) || (s.content||'').toLowerCase().includes(q);
+    return mc && ml && mq;
+  }).sort((a,b) => b.createdAt - a.createdAt);
+
+  const list = document.getElementById('skillList');
+  if (filtered.length === 0) {
+    list.innerHTML = `<div class="empty-state"><div class="ico">📚</div><p>スキルがありません。<br>「＋ スキル追加」から登録してください。</p></div>`;
+    return;
+  }
+  const stars = n => '⭐'.repeat(n);
+  list.innerHTML = filtered.map(s => `
+    <div class="skill-card" onclick="openSkillModal('${s.id}')">
+      <div class="skill-card-top">
+        ${s.category ? `<span class="skill-card-cat">${esc(s.category)}</span>` : ''}
+        <span class="skill-card-level">${stars(s.level||1)}</span>
+      </div>
+      <div class="skill-card-title">${esc(s.title)}</div>
+      ${s.content ? `<div class="skill-card-content">${esc(s.content)}</div>` : ''}
+      ${s.url ? `<div class="skill-card-url">🔗 <a href="${esc(s.url)}" target="_blank" onclick="event.stopPropagation()">${esc(s.url)}</a></div>` : ''}
+    </div>`).join('');
+}
+
+function setSkillFilter(type, val, btn) {
+  if (type === 'cat') {
+    activeSkillCat = val;
+    document.querySelectorAll('.skill-cat-row .task-cat-btn').forEach(b => b.classList.remove('on'));
+  } else {
+    activeSkillLv = val;
+    document.querySelectorAll('.skill-lv-btn').forEach(b => b.classList.remove('on'));
+  }
+  btn.classList.add('on');
+  renderSkills();
+}
+
+function openSkillModal(id) {
+  editSkillId = id;
+  const s = id ? skills.find(x => x.id === id) : null;
+  document.getElementById('skillModalTitle').textContent = s ? 'スキル編集' : 'スキル追加';
+  document.getElementById('smTitle').value = s ? s.title : '';
+  document.getElementById('smContent').value = s ? (s.content||'') : '';
+  document.getElementById('smUrl').value = s ? (s.url||'') : '';
+  document.getElementById('smLevel').value = s ? (s.level||1) : 1;
+  document.getElementById('smDeleteBtn').style.display = s ? 'block' : 'none';
+
+  const catSel = document.getElementById('smCat');
+  catSel.innerHTML = skillCats.map(c =>
+    `<option value="${esc(c)}" ${s&&s.category===c?'selected':''}>${esc(c)}</option>`
+  ).join('');
+
+  document.getElementById('skillModal').style.display = 'flex';
+  document.getElementById('smTitle').focus();
+}
+
+function closeSkillModal() {
+  document.getElementById('skillModal').style.display = 'none';
+  editSkillId = null;
+}
+function closeSkillModalOutside(e) { if (e.target.id === 'skillModal') closeSkillModal(); }
+
+function saveSkill() {
+  const title = document.getElementById('smTitle').value.trim();
+  if (!title) { showToast('タイトルを入力してください'); return; }
+  const skill = {
+    id: editSkillId || Date.now().toString(),
+    title,
+    category: document.getElementById('smCat').value,
+    level: parseInt(document.getElementById('smLevel').value),
+    content: document.getElementById('smContent').value.trim(),
+    url: document.getElementById('smUrl').value.trim(),
+    createdAt: editSkillId ? (skills.find(s=>s.id===editSkillId)?.createdAt || Date.now()) : Date.now(),
+    updatedAt: Date.now()
+  };
+  if (editSkillId) {
+    const i = skills.findIndex(s => s.id === editSkillId);
+    if (i > -1) skills[i] = skill;
+  } else { skills.unshift(skill); }
+  saveSkills(); closeSkillModal(); renderSkills();
+  showToast(editSkillId ? '✅ 更新しました' : '💾 スキルを追加しました');
+}
+
+function deleteSkill() {
+  if (!editSkillId) return;
+  if (!confirm('このスキルを削除しますか？')) return;
+  skills = skills.filter(s => s.id !== editSkillId);
+  saveSkills(); closeSkillModal(); renderSkills();
+  showToast('🗑️ 削除しました');
+}
+
+function openSkillCatModal() {
+  renderSkillCatList();
+  document.getElementById('skillCatModal').style.display = 'flex';
+  document.getElementById('newSkillCatInput').value = '';
+}
+function closeSkillCatModal() {
+  document.getElementById('skillCatModal').style.display = 'none';
+  renderSkills();
+}
+function closeSkillCatModalOutside(e) { if (e.target.id === 'skillCatModal') closeSkillCatModal(); }
+
+function renderSkillCatList() {
+  document.getElementById('skillCatList').innerHTML = skillCats.map((c, i) =>
+    `<div class="cat-item"><span>${esc(c)}</span>
+    <button class="cat-item-del" onclick="deleteSkillCat(${i})">削除</button></div>`
+  ).join('');
+}
+
+function addSkillCategory() {
+  const val = document.getElementById('newSkillCatInput').value.trim();
+  if (!val) { showToast('カテゴリ名を入力してください'); return; }
+  if (skillCats.includes(val)) { showToast('同じカテゴリが既にあります'); return; }
+  skillCats.push(val);
+  saveSkills();
+  document.getElementById('newSkillCatInput').value = '';
+  renderSkillCatList();
+  showToast(`✅ 「${val}」を追加しました`);
+}
+
+function deleteSkillCat(idx) {
+  const name = skillCats[idx];
+  if (!confirm(`「${name}」を削除しますか？`)) return;
+  skills.forEach(s => { if (s.category === name) s.category = ''; });
+  skillCats.splice(idx, 1);
+  saveSkills(); renderSkillCatList();
+}
+
+// INIT
+initDate();
+renderCalendar();
+renderToday();
+renderStock();
+initDatePicker();
+
+// ── カスタム日付ピッカー ──
+
+function initDatePicker() {
+  const hourSel = document.getElementById('dpHour');
+  const minSel = document.getElementById('dpMin');
+  hourSel.innerHTML = Array.from({length:24},(_,i)=>`<option value="${pad(i)}">${pad(i)}時</option>`).join('');
+  minSel.innerHTML = ['00','05','10','15','20','25','30','35','40','45','50','55'].map(m=>`<option value="${m}">${m}分</option>`).join('');
+  hourSel.value = '09';
+  renderDpCal();
+}
+
+function toggleDatePicker() {
+  const panel = document.getElementById('datePickerPanel');
+  const btn = document.querySelector('.date-picker-btn');
+  const isOpen = panel.style.display !== 'none';
+  panel.style.display = isOpen ? 'none' : 'block';
+  btn.classList.toggle('open', !isOpen);
+  if (!isOpen) renderDpCal();
+}
+
+// カレンダーグリッドの表示/非表示切り替え
+function toggleDpCal() {
+  const area = document.getElementById('dpCalArea');
+  const btn = document.querySelector('.dp-toggle-cal');
+  const isOpen = area.style.display !== 'none';
+  area.style.display = isOpen ? 'none' : 'block';
+  btn.textContent = isOpen ? '日付変更 ▾' : '日付変更 ▴';
+  if (!isOpen) renderDpCal();
+}
+
+function closeDatePicker() {
+  document.getElementById('datePickerPanel').style.display = 'none';
+  document.querySelector('.date-picker-btn').classList.remove('open');
+  updateDatePickerLabel();
+}
+
+function clearDatePicker() {
+  dpSelDate = null;
+  document.getElementById('fDate').value = '';
+  document.getElementById('dpCalGrid').querySelectorAll('.dp-day').forEach(d => d.classList.remove('selected'));
+  document.getElementById('datePickerLabel').textContent = '📅 日付・時間を選択';
+  closeDatePicker();
+}
+
+function dpChangeMonth(d) {
+  dpMonth += d;
+  if (dpMonth > 11) { dpMonth = 0; dpYear++; }
+  if (dpMonth < 0) { dpMonth = 11; dpYear--; }
+  renderDpCal();
+}
+
+function renderDpCal() {
+  document.getElementById('dpCalTitle').textContent = `${dpYear}年${dpMonth+1}月`;
+  const today = new Date();
+  const tsToday = `${today.getFullYear()}-${pad(today.getMonth()+1)}-${pad(today.getDate())}`;
+  const firstDay = new Date(dpYear, dpMonth, 1).getDay();
+  const firstMon = (firstDay + 6) % 7;
+  const dim = new Date(dpYear, dpMonth+1, 0).getDate();
+  const diPrev = new Date(dpYear, dpMonth, 0).getDate();
+  let total = firstMon + dim;
+  if (total % 7) total += 7 - (total % 7);
+
+  let html = '';
+  for (let i = 0; i < total; i++) {
+    let day, m, y, other = false;
+    if (i < firstMon) { day = diPrev - firstMon + i + 1; m = dpMonth-1; y = dpYear; other = true; }
+    else if (i >= firstMon + dim) { day = i - firstMon - dim + 1; m = dpMonth+1; y = dpYear; other = true; }
+    else { day = i - firstMon + 1; m = dpMonth; y = dpYear; }
+    let rm = m, ry = y;
+    if (rm < 0) { rm = 11; ry--; } if (rm > 11) { rm = 0; ry++; }
+    const ds = `${ry}-${pad(rm+1)}-${pad(day)}`;
+    const dow = new Date(ds).getDay();
+    const isSat = dow === 6, isSun = dow === 0;
+    const isSel = ds === dpSelDate;
+    const isToday = ds === tsToday;
+    const cls = [other?'other':'', isSat&&!other?'sat':'', isSun&&!other?'sun':'', isSel?'selected':'', isToday&&!isSel?'today':''].filter(Boolean).join(' ');
+    html += `<div class="dp-day ${cls}" onclick="dpPickDay('${ds}')">${day}</div>`;
+  }
+  document.getElementById('dpCalGrid').innerHTML = html;
+}
+
+function dpPickDay(ds) {
+  dpSelDate = ds;
+  renderDpCal();
+  updateDatePickerLabel();
+  // 日付選択後、グリッドを自動で閉じる
+  const area = document.getElementById('dpCalArea');
+  const btn = document.querySelector('.dp-toggle-cal');
+  if (area) area.style.display = 'none';
+  if (btn) btn.textContent = '日付変更 ▾';
+}
+
+function updateDatePickerLabel() {
+  if (!dpSelDate) return;
+  const h = document.getElementById('dpHour').value;
+  const m = document.getElementById('dpMin').value;
+  const [y, mo, d] = dpSelDate.split('-');
+  const dow = ['日','月','火','水','木','金','土'][new Date(dpSelDate).getDay()];
+  const labelText = `📅 ${parseInt(mo)}月${parseInt(d)}日（${dow}） ${h}:${m}`;
+  document.getElementById('datePickerLabel').textContent = labelText;
+  // パネル内の日付表示も更新
+  const dpDateLbl = document.getElementById('dpDateLabel');
+  if (dpDateLbl) dpDateLbl.textContent = `📅 ${parseInt(mo)}月${parseInt(d)}日（${dow}）`;
+  document.getElementById('fDate').value = `${dpSelDate}T${h}:${m}`;
+}
+
+function setDatePickerValue(val) {
+  // 既存データの編集時にピッカーに値をセット
+  if (!val) return;
+  dpSelDate = val.slice(0, 10);
+  const h = val.slice(11, 13) || '09';
+  const rawMin = val.slice(14, 16) || '00';
+  const m = ['00','05','10','15','20','25','30','35','40','45','50','55']
+    .reduce((acc, v) => Math.abs(parseInt(v)-parseInt(rawMin)) < Math.abs(parseInt(acc)-parseInt(rawMin)) ? v : acc, '00');
+  dpYear = parseInt(dpSelDate.slice(0,4));
+  dpMonth = parseInt(dpSelDate.slice(5,7)) - 1;
+  document.getElementById('dpHour').value = h;
+  document.getElementById('dpMin').value = m;
+  updateDatePickerLabel();
+  // カレンダーグリッドは閉じておく
+  const area = document.getElementById('dpCalArea');
+  const btn = document.querySelector('.dp-toggle-cal');
+  if (area) area.style.display = 'none';
+  if (btn) btn.textContent = '日付変更 ▾';
+}
+
+// パネル外クリックで閉じる
+document.addEventListener('click', e => {
+  const wrap = document.getElementById('datePickerWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    document.getElementById('datePickerPanel').style.display = 'none';
+    document.querySelector('.date-picker-btn')?.classList.remove('open');
+  }
+});
+
+// ── バックアップ・データ復元 ──
+function backupData() {
+  const data = { version: 2, exportedAt: new Date().toISOString(), posts };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  const d = new Date();
+  a.download = `sns_posts_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}.json`;
+  a.click();
+  showToast('⬇️ バックアップを保存しました');
+}
+
+function restoreData(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  // .json 以外は弾く
+  if (!file.name.endsWith('.json')) {
+    showToast('❌ JSONファイルを選んでください');
+    e.target.value = '';
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = ev => {
+    let imported = null;
+    try {
+      const raw = JSON.parse(ev.target.result);
+      // { posts: [...] } 形式と [ ... ] 形式の両方に対応
+      imported = Array.isArray(raw) ? raw : (Array.isArray(raw.posts) ? raw.posts : null);
+    } catch {
+      showToast('❌ JSONの読み込みに失敗しました。ファイルが壊れている可能性があります');
+      e.target.value = '';
+      return;
+    }
+
+    if (!imported) {
+      showToast('❌ データ形式が正しくありません');
+      e.target.value = '';
+      return;
+    }
+
+    if (!confirm(`${imported.length}件のデータを復元します。\n現在のデータは上書きされます。よろしいですか？`)) {
+      e.target.value = '';
+      return;
+    }
+
+    posts = imported;
+    save();
+
+    // 全ビューを再描画
+    renderCalendar();
+    renderToday();
+    renderStock();
+
+    showToast(`✅ ${imported.length}件のデータを復元しました`);
+    e.target.value = '';
+  };
+
+  reader.onerror = () => {
+    showToast('❌ ファイルの読み取りに失敗しました');
+    e.target.value = '';
+  };
+
+  reader.readAsText(file, 'utf-8');
+}
 </script>
 </body>
 </html>
